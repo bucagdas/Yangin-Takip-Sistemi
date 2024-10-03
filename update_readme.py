@@ -67,7 +67,7 @@ def update_readme_with_fire_data():
 
             last_update = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            table_md = f"### Son Güncelleme: {last_update}\n\n"
+            table_md = f"### Son Güncelleme: {last_update} (UTC)\n\n"
             table_md += '| Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |\n'
             table_md += '|-----------------------------|----------------|----------|-----|----------------|-------------|\n'
 
