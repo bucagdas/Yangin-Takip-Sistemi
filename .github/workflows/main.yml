@@ -45,7 +45,7 @@ jobs:
         run: |-
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
+          git add -A
           timestamp=$(date '+%Y-%m-%d %H:%M:%S')
           git commit -m "Auto-update fire data ${timestamp}" || exit 0
           git push
