@@ -1,6 +1,5 @@
-import pandas as pd 
+import pandas as pd
 import requests
-import json
 import sqlite3
 import os
 import io
@@ -79,13 +78,22 @@ for satellite in satellite_sources:
     else:
         logging.error(f"API isteği başarısız oldu: {response.status_code} - Uydu: {satellite}")
 
+# Text dosyaları için genel bir kayıt fonksiyonu
+def save_to_text_file(file_path, data):
+    """Belirtilen dosyaya verileri kaydeder."""
+    try:
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(data)
+        logging.info(f"Veriler '{file_path}' dosyasına kaydedildi.")
+    except Exception as e:
+        logging.error(f"Veriler '{file_path}' dosyasına kaydedilemedi: {e}")
+
 # Kullanılabilir uyduları ve ülkeleri kaydetme fonksiyonu
 def save_satellite_and_country_info(selected_map_key):
-    # Uydu ve ülke bilgileri dosya yollarını oluştur
-    current_dir = os.getcwd()
-    satellite_file_path = os.path.join(current_dir, 'available_satellites.txt')
-    country_file_path = os.path.join(current_dir, 'country_codes.txt')
-    
+    # Dosya yollarını belirle
+    available_satellites_file = './available_satellites.txt'
+    country_codes_file = './country_codes.txt'
+
     # Kullanılabilir uyduları çekme
     satellite_url = f'https://firms.modaps.eosdis.nasa.gov/api/data_availability/csv/{selected_map_key}/ALL'
     satellite_response = requests.get(satellite_url)
@@ -94,21 +102,15 @@ def save_satellite_and_country_info(selected_map_key):
     country_url = 'https://firms.modaps.eosdis.nasa.gov/api/countries'
     country_response = requests.get(country_url)
 
-    # API yanıtlarını kontrol et ve dosyalara yaz
-    if satellite_response.status_code == 200 and country_response.status_code == 200:
-        # Uydu verilerini kaydetme
-        with open(satellite_file_path, 'w', encoding='utf-8') as satellite_file:
-            satellite_file.write(satellite_response.text)
-        logging.info(f"Uydu bilgileri '{satellite_file_path}' dosyasına kaydedildi.")
-
-        # Ülke kodlarını kaydetme
-        with open(country_file_path, 'w', encoding='utf-8') as country_file:
-            country_file.write(country_response.text)
-        logging.info(f"Ülke kodları bilgileri '{country_file_path}' dosyasına kaydedildi.")
+    if satellite_response.status_code == 200:
+        save_to_text_file(available_satellites_file, satellite_response.text)
     else:
-        logging.error(f"Uydu veya ülke kodlarını çekmede hata oluştu. Uydu: {satellite_response.status_code}, Ülke: {country_response.status_code}")
-        logging.info(f"Uydu yanıtı: {satellite_response.text}")
-        logging.info(f"Ülke yanıtı: {country_response.text}")
+        logging.error(f"Uydu bilgileri alınamadı: {satellite_response.status_code}")
+
+    if country_response.status_code == 200:
+        save_to_text_file(country_codes_file, country_response.text)
+    else:
+        logging.error(f"Ülke kodları bilgileri alınamadı: {country_response.status_code}")
 
 # Uydu ve ülke bilgilerini kaydet
 save_satellite_and_country_info(selected_map_key)
