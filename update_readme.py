@@ -86,7 +86,7 @@ def update_readme_with_fire_data():
 
             # README.md dosyasını güncelleme, eski verinin üzerine yaz
             with open('README.md', 'w', encoding='utf-8') as f:
-                f.write("# Yangın Verileri Takip Sistemi\n")
+                f.write("# Yangın Takip Sistemi\n")
                 f.write("\nBu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.\n")
                 f.write("\n### Özellikler:\n")
                 f.write("- **Üç uydu** ile yangın verilerini toplar.\n")
@@ -99,9 +99,11 @@ def update_readme_with_fire_data():
                 f.write("- **main.py** içerisinde ülke kodu ve gün aralığı parametreleri dinamik olarak ayarlanabilir:\n")
                 f.write("\n```python\ncountry_code = 'TUR'  # Ülke kodu burada ayarlanabilir\ndays = 1  # Son 24 saatlik veriler için gün aralığı\n```\n")
                 f.write("\n### `update_readme.py` Ne Yapar?\n")
-                f.write("Bu script, çekilen son verileri işleyerek, **README.md** dosyasına bir tablo halinde kaydeder. Tabloda yangınların enlem, boylam, sıcaklık, güven seviyesi ve gündüz/gece bilgileri yer alır. Güncellemeler her çalıştırıldığında otomatik olarak yapılır ve dosyanın üzerine yazılır, böylece en güncel veriler her zaman README.md dosyasında bulunur. Verilerin nasıl kullanılabileceğine bir örnektir.\n")
+                f.write("Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çekilen son verileri işleyerek, **README.md** dosyasına bir tablo halinde kaydeder. Tabloda yangınların enlem, boylam, sıcaklık, güven seviyesi ve gündüz/gece bilgileri yer alır. Güncellemeler her çalıştırıldığında otomatik olarak yapılır ve dosyanın üzerine yazılır, böylece en güncel veriler her zaman README.md dosyasında bulunur.\n")
                 f.write("\n## Son Yangın Verileri\n")
                 f.write(table_md)
+                f.write("\n## Yazar\n")
+                f.write("\n[sarusadgac](https://x.com/sarusadgac)\n") 
 
             logging.info(f"README.md dosyasına son veriler başarıyla eklendi.")
         except Exception as e:
