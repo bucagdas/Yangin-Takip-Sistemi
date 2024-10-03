@@ -1,0 +1,51 @@
+name: Turkiye Fire Data Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fire_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Run the Python script
+      - name: Fetch Turkey Fire Data
+        run: python main.py
+        env:
+          MAP_KEY_1: ${{ secrets.MAP_KEY_1 }}
+          MAP_KEY_2: ${{ secrets.MAP_KEY_2 }}
+          MAP_KEY_3: ${{ secrets.MAP_KEY_3 }}
+          MAP_KEY_4: ${{ secrets.MAP_KEY_4 }}
+          MAP_KEY_5: ${{ secrets.MAP_KEY_5 }}
+          MAP_KEY_6: ${{ secrets.MAP_KEY_6 }}
+          
+      # Run the update_readme.py script to update README.md with the latest fire data
+      - name: Update README with Fire Data
+        run: python update_readme.py
+        
+      # Commit and push changes
+      - name: Commit and push changes
+        run: |-
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+          git commit -m "Auto-update fire data ${timestamp}" || exit 0
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
