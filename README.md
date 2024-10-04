@@ -24,7 +24,7 @@ days = 1  # Son 24 saatlik veriler için gün aralığı
 Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çekilen son verileri işleyerek, **README.md** dosyasına bir tablo halinde kaydeder. Tabloda yangınların enlem, boylam, sıcaklık, güven seviyesi ve gündüz/gece bilgileri yer alır. Güncellemeler her çalıştırıldığında otomatik olarak yapılır ve dosyanın üzerine yazılır, böylece en güncel veriler her zaman README.md dosyasında bulunur.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-10-04 03:59:15 (UTC)
+### Son Güncelleme: 2024-10-04 04:27:55 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -86,6 +86,7 @@ Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çek
 | [39.83742, 30.30316](https://www.google.com/maps?q=39.83742,30.30316) | 2024-10-04 00:33 | 296.51 | 0.94 | Orta | Gece |
 | [39.86623, 26.24479](https://www.google.com/maps?q=39.86623,26.24479) | 2024-10-04 00:33 | 301.04 | 0.89 | Orta | Gece |
 | [39.86628, 26.24531](https://www.google.com/maps?q=39.86628,26.24531) | 2024-10-04 00:33 | 301.49 | 1.33 | Orta | Gece |
+| [41.2982, 27.97364](https://www.google.com/maps?q=41.2982,27.97364) | 2024-10-04 01:17 | 298.15 | 0.91 | Orta | Gece |
 
 ## Yazar
 
