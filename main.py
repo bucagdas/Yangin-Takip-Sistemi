@@ -6,6 +6,7 @@ import io
 import logging 
 from datetime import datetime
 import random
+from requests.exceptions import RequestException
 
 # Log dosyasını ayarla
 logging.basicConfig(filename='main.log', level=logging.INFO,
@@ -47,13 +48,16 @@ os.makedirs(sqlite_dir, exist_ok=True)
 
 # API'den verileri çekmek ve dosyalara kaydetmek için döngü
 for satellite in satellite_sources:
-    # API URL'si
     url = f'https://firms.modaps.eosdis.nasa.gov/api/country/csv/{selected_map_key}/{satellite}/{country_code}/{days}'
     
-    # API isteği yap
-    response = requests.get(url)
-
-    if response.status_code == 200:
+    try:
+        # API isteği yap ve yanıtı kontrol et
+        response = requests.get(url)
+        response.raise_for_status()  # Hata durumunda exception fırlatır
+        
+        # API yanıtını logla
+        logging.info(f"API yanıtı: Status Code: {response.status_code}, Content: {response.text[:100]}")  # İlk 100 karakteri logla
+        
         # Veriyi pandas DataFrame'e yükle
         data = response.content.decode('utf-8')
         df = pd.read_csv(io.StringIO(data))
@@ -75,13 +79,23 @@ for satellite in satellite_sources:
         conn.close()
         logging.info(f"Veriler SQLite veritabanına '{sqlite_filename}' olarak kaydedildi.")
     
-    else:
-        logging.error(f"API isteği başarısız oldu: {response.status_code} - Uydu: {satellite}")
+    except RequestException as e:
+        logging.error(f"API isteği sırasında hata oluştu: {e}")
+    except Exception as e:
+        logging.error(f"Veri işleme veya dosya kaydetme işlemi sırasında hata oluştu: {e}")
 
 # Text dosyaları için genel bir kayıt fonksiyonu
 def save_to_text_file(file_path, data):
     """Belirtilen dosyaya verileri kaydeder."""
     try:
+        # Mevcut dosya içeriğini kontrol et, aynıysa yazma
+        if os.path.exists(file_path):
+            with open(file_path, 'r', encoding='utf-8') as file:
+                if file.read() == data:
+                    logging.info(f"'{file_path}' dosyası zaten güncel, kaydetmeye gerek yok.")
+                    return
+        
+        # Dosyaya yazma işlemi
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(data)
         logging.info(f"Veriler '{file_path}' dosyasına kaydedildi.")
@@ -94,23 +108,27 @@ def save_satellite_and_country_info(selected_map_key):
     available_satellites_file = './available_satellites.txt'
     country_codes_file = './country_codes.txt'
 
-    # Kullanılabilir uyduları çekme
-    satellite_url = f'https://firms.modaps.eosdis.nasa.gov/api/data_availability/csv/{selected_map_key}/ALL'
-    satellite_response = requests.get(satellite_url)
-
-    # Ülke kodlarını çekme
-    country_url = 'https://firms.modaps.eosdis.nasa.gov/api/countries'
-    country_response = requests.get(country_url)
-
-    if satellite_response.status_code == 200:
+    try:
+        # Kullanılabilir uyduları çekme
+        satellite_url = f'https://firms.modaps.eosdis.nasa.gov/api/data_availability/csv/{selected_map_key}/ALL'
+        satellite_response = requests.get(satellite_url)
+        satellite_response.raise_for_status()  # Hata durumunda exception fırlatır
+        
+        # Uydu bilgilerini kaydet
         save_to_text_file(available_satellites_file, satellite_response.text)
-    else:
-        logging.error(f"Uydu bilgileri alınamadı: {satellite_response.status_code}")
 
-    if country_response.status_code == 200:
+        # Ülke kodlarını çekme
+        country_url = 'https://firms.modaps.eosdis.nasa.gov/api/countries'
+        country_response = requests.get(country_url)
+        country_response.raise_for_status()  # Hata durumunda exception fırlatır
+
+        # Ülke kodlarını kaydet
         save_to_text_file(country_codes_file, country_response.text)
-    else:
-        logging.error(f"Ülke kodları bilgileri alınamadı: {country_response.status_code}")
+
+    except RequestException as e:
+        logging.error(f"API isteği sırasında hata oluştu: {e}")
+    except Exception as e:
+        logging.error(f"Veri kaydetme işlemi sırasında hata oluştu: {e}")
 
 # Uydu ve ülke bilgilerini kaydet
 save_satellite_and_country_info(selected_map_key)
