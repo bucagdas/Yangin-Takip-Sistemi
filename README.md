@@ -24,7 +24,7 @@ days = 1  # Son 24 saatlik veriler için gün aralığı
 Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çekilen son verileri işleyerek, **README.md** dosyasına bir tablo halinde kaydeder. Tabloda yangınların enlem, boylam, sıcaklık, güven seviyesi ve gündüz/gece bilgileri yer alır. Güncellemeler her çalıştırıldığında otomatik olarak yapılır ve dosyanın üzerine yazılır, böylece en güncel veriler her zaman README.md dosyasında bulunur.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-10-09 14:19:43 (UTC)
+### Son Güncelleme: 2024-10-09 14:37:31 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -486,6 +486,12 @@ Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çek
 | [38.06994, 29.80852](https://www.google.com/maps?q=38.06994,29.80852) | 2024-10-09 12:00 | 346.46 | 13.41 | Orta | Gündüz |
 | [38.20259, 29.94621](https://www.google.com/maps?q=38.20259,29.94621) | 2024-10-09 12:00 | 335.97 | 5.98 | Orta | Gündüz |
 | [38.20395, 29.94698](https://www.google.com/maps?q=38.20395,29.94698) | 2024-10-09 12:00 | 338.34 | 8.47 | Orta | Gündüz |
+| [39.05245, 29.05367](https://www.google.com/maps?q=39.05245,29.05367) | 2024-10-09 12:00 | 333.77 | 3.5 | Orta | Gündüz |
+| [40.00122, 27.79868](https://www.google.com/maps?q=40.00122,27.79868) | 2024-10-09 12:00 | 337.93 | 6.59 | Orta | Gündüz |
+| [40.11708, 28.50038](https://www.google.com/maps?q=40.11708,28.50038) | 2024-10-09 12:00 | 342.52 | 9.66 | Orta | Gündüz |
+| [40.12503, 27.99852](https://www.google.com/maps?q=40.12503,27.99852) | 2024-10-09 12:00 | 335.01 | 4.76 | Orta | Gündüz |
+| [40.12686, 28.00183](https://www.google.com/maps?q=40.12686,28.00183) | 2024-10-09 12:00 | 333.71 | 5.78 | Orta | Gündüz |
+| [40.13785, 27.96605](https://www.google.com/maps?q=40.13785,27.96605) | 2024-10-09 12:00 | 329.67 | 3.77 | Orta | Gündüz |
 | [36.99675, 36.65663](https://www.google.com/maps?q=36.99675,36.65663) | 2024-10-09 09:26 | 351.35 | 11.08 | Orta | Gündüz |
 | [37.00045, 36.65442](https://www.google.com/maps?q=37.00045,36.65442) | 2024-10-09 09:26 | 367.0 | 10.43 | Yüksek | Gündüz |
 | [37.09423, 39.70044](https://www.google.com/maps?q=37.09423,39.70044) | 2024-10-09 09:26 | 334.3 | 1.74 | Orta | Gündüz |
