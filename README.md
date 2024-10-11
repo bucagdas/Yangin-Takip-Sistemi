@@ -24,7 +24,7 @@ days = 1  # Son 24 saatlik veriler için gün aralığı
 Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çekilen son verileri işleyerek, **README.md** dosyasına bir tablo halinde kaydeder. Tabloda yangınların enlem, boylam, sıcaklık, güven seviyesi ve gündüz/gece bilgileri yer alır. Güncellemeler her çalıştırıldığında otomatik olarak yapılır ve dosyanın üzerine yazılır, böylece en güncel veriler her zaman README.md dosyasında bulunur.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-10-11 10:56:19 (UTC)
+### Son Güncelleme: 2024-10-11 11:17:09 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -143,6 +143,22 @@ Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çek
 | [41.18298, 32.63596](https://www.google.com/maps?q=41.18298,32.63596) | 2024-10-11 00:01 | 299.53 | 1.0 | Orta | Gece |
 | [41.24011, 36.4621](https://www.google.com/maps?q=41.24011,36.4621) | 2024-10-11 00:01 | 308.59 | 0.96 | Orta | Gece |
 | [41.26513, 31.42489](https://www.google.com/maps?q=41.26513,31.42489) | 2024-10-11 00:01 | 299.98 | 0.96 | Orta | Gece |
+| [38.42759, 27.21547](https://www.google.com/maps?q=38.42759,27.21547) | 2024-10-11 00:48 | 307.03 | 0.65 | Orta | Gece |
+| [38.45464, 27.26137](https://www.google.com/maps?q=38.45464,27.26137) | 2024-10-11 00:48 | 302.94 | 0.58 | Orta | Gece |
+| [38.65768, 30.61743](https://www.google.com/maps?q=38.65768,30.61743) | 2024-10-11 00:48 | 297.4 | 1.72 | Orta | Gece |
+| [38.65844, 30.61341](https://www.google.com/maps?q=38.65844,30.61341) | 2024-10-11 00:48 | 295.5 | 0.86 | Orta | Gece |
+| [38.73804, 26.92892](https://www.google.com/maps?q=38.73804,26.92892) | 2024-10-11 00:48 | 302.21 | 0.57 | Orta | Gece |
+| [38.73909, 26.94592](https://www.google.com/maps?q=38.73909,26.94592) | 2024-10-11 00:48 | 311.19 | 1.93 | Orta | Gece |
+| [38.74989, 26.94635](https://www.google.com/maps?q=38.74989,26.94635) | 2024-10-11 00:48 | 299.86 | 1.14 | Orta | Gece |
+| [39.11437, 27.51091](https://www.google.com/maps?q=39.11437,27.51091) | 2024-10-11 00:48 | 297.93 | 0.85 | Orta | Gece |
+| [39.1668, 27.62977](https://www.google.com/maps?q=39.1668,27.62977) | 2024-10-11 00:48 | 301.69 | 0.94 | Orta | Gece |
+| [39.16747, 27.62985](https://www.google.com/maps?q=39.16747,27.62985) | 2024-10-11 00:48 | 302.11 | 0.84 | Orta | Gece |
+| [39.86654, 26.24351](https://www.google.com/maps?q=39.86654,26.24351) | 2024-10-11 00:48 | 305.8 | 1.7 | Orta | Gece |
+| [39.86673, 26.24181](https://www.google.com/maps?q=39.86673,26.24181) | 2024-10-11 00:48 | 309.0 | 1.62 | Orta | Gece |
+| [40.18659, 29.22306](https://www.google.com/maps?q=40.18659,29.22306) | 2024-10-11 00:48 | 301.23 | 0.45 | Orta | Gece |
+| [41.01443, 27.96063](https://www.google.com/maps?q=41.01443,27.96063) | 2024-10-11 00:48 | 299.63 | 0.65 | Orta | Gece |
+| [41.0186, 28.55392](https://www.google.com/maps?q=41.0186,28.55392) | 2024-10-11 00:48 | 299.79 | 0.73 | Orta | Gece |
+| [41.21398, 27.87914](https://www.google.com/maps?q=41.21398,27.87914) | 2024-10-11 00:48 | 304.49 | 0.77 | Orta | Gece |
 
 ## Yazar
 
