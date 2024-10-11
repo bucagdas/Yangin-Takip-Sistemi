@@ -24,7 +24,7 @@ days = 1  # Son 24 saatlik veriler için gün aralığı
 Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çekilen son verileri işleyerek, **README.md** dosyasına bir tablo halinde kaydeder. Tabloda yangınların enlem, boylam, sıcaklık, güven seviyesi ve gündüz/gece bilgileri yer alır. Güncellemeler her çalıştırıldığında otomatik olarak yapılır ve dosyanın üzerine yazılır, böylece en güncel veriler her zaman README.md dosyasında bulunur.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-10-11 14:57:14 (UTC)
+### Son Güncelleme: 2024-10-11 15:22:48 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -375,6 +375,10 @@ Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çek
 | [41.68471, 35.9194](https://www.google.com/maps?q=41.68471,35.9194) | 2024-10-11 10:30 | 337.8 | 6.25 | Orta | Gündüz |
 | [41.69561, 35.87846](https://www.google.com/maps?q=41.69561,35.87846) | 2024-10-11 10:30 | 334.52 | 2.29 | Orta | Gündüz |
 | [41.69889, 35.87758](https://www.google.com/maps?q=41.69889,35.87758) | 2024-10-11 10:30 | 335.71 | 4.54 | Orta | Gündüz |
+| [40.11202, 27.96564](https://www.google.com/maps?q=40.11202,27.96564) | 2024-10-11 12:10 | 326.08 | 3.68 | Orta | Gündüz |
+| [40.11237, 28.01732](https://www.google.com/maps?q=40.11237,28.01732) | 2024-10-11 12:10 | 332.4 | 4.44 | Orta | Gündüz |
+| [40.73883, 26.41525](https://www.google.com/maps?q=40.73883,26.41525) | 2024-10-11 12:10 | 331.48 | 4.25 | Orta | Gündüz |
+| [40.73966, 26.41451](https://www.google.com/maps?q=40.73966,26.41451) | 2024-10-11 12:10 | 333.92 | 4.46 | Orta | Gündüz |
 
 ## Yazar
 
