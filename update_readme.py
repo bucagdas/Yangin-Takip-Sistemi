@@ -1,7 +1,7 @@
 import os  
 import pandas as pd
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Log dosyasını ayarla
 logging.basicConfig(filename='update_readme.log', level=logging.INFO, 
@@ -65,13 +65,26 @@ def update_readme_with_fire_data():
 
             merged_df = pd.concat(dfs, ignore_index=True, sort=False).fillna('Yok')
 
-            last_update = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            # Şu anki zaman ve son 24 saat
+            now = datetime.utcnow()
+            last_24_hours = now - timedelta(days=1)
+
+            # Tarih ve saat filtrelemesi yap (son 24 saat)
+            merged_df['acq_datetime'] = pd.to_datetime(merged_df['acq_date'] + ' ' + merged_df['acq_time'].apply(format_time))
+            filtered_df = merged_df[merged_df['acq_datetime'] >= last_24_hours]
+
+            # Eğer son 24 saate ait veri yoksa
+            if filtered_df.empty:
+                logging.info("Son 24 saatte veri bulunamadı.")
+                return
+
+            last_update = now.strftime("%Y-%m-%d %H:%M:%S")
 
             table_md = f"### Son Güncelleme: {last_update} (UTC)\n\n"
             table_md += '| Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |\n'
             table_md += '|-----------------------------|----------------|----------|-----|----------------|-------------|\n'
 
-            for _, row in merged_df.iterrows():
+            for _, row in filtered_df.iterrows():
                 # Enlem ve boylamı Google Maps linki ile birleştir
                 coords = create_google_maps_link(row['latitude'], row['longitude'])
                 
@@ -88,18 +101,6 @@ def update_readme_with_fire_data():
             with open('README.md', 'w', encoding='utf-8') as f:
                 f.write("# Yangın Takip Sistemi\n")
                 f.write("\nBu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.\n")
-                f.write("\n### Özellikler:\n")
-                f.write("- **Üç uydu** ile yangın verilerini toplar.\n")
-                f.write("- Veriler, **sıcaklık**, **parlaklık** ve **güven seviyesi** bilgilerini içerir.\n")
-                f.write("- **Gece ve gündüz** yangın tespitlerini ayırır.\n")
-                f.write("- **JSON, CSV ve SQLite** formatlarında saklanır.\n")
-                f.write("- **Ülke kodları** ve **kullanılabilir uydular** bilgileri de otomatik olarak çekilir.\n")
-                f.write("- **main.py** içerisinde **uydu bilgilerini** dinamik olarak ayarlayabilirsiniz:\n")
-                f.write("\n```python\nsatellite_sources = ['VIIRS_NOAA20_NRT', 'VIIRS_NOAA21_NRT', 'VIIRS_SNPP_NRT']\n```\n")
-                f.write("- **main.py** içerisinde ülke kodu ve gün aralığı parametreleri dinamik olarak ayarlanabilir:\n")
-                f.write("\n```python\ncountry_code = 'TUR'  # Ülke kodu burada ayarlanabilir\ndays = 1  # Son 24 saatlik veriler için gün aralığı\n```\n")
-                f.write("\n### `update_readme.py` Ne Yapar?\n")
-                f.write("Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çekilen son verileri işleyerek, **README.md** dosyasına bir tablo halinde kaydeder. Tabloda yangınların enlem, boylam, sıcaklık, güven seviyesi ve gündüz/gece bilgileri yer alır. Güncellemeler her çalıştırıldığında otomatik olarak yapılır ve dosyanın üzerine yazılır, böylece en güncel veriler her zaman README.md dosyasında bulunur.\n")
                 f.write("\n## Son Yangın Verileri\n")
                 f.write(table_md)
                 f.write("\n## Yazar\n")
