@@ -33,9 +33,6 @@ days = 1
 # Alınacak uydu verileri
 satellite_sources = ['VIIRS_NOAA20_NRT', 'VIIRS_NOAA21_NRT', 'VIIRS_SNPP_NRT']
 
-# Zaman damgası oluştur (dosya isimlerine eklemek için)
-timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
 # Klasörler
 json_dir = 'json_data/'
 csv_dir = 'csv_data/'
@@ -62,22 +59,22 @@ for satellite in satellite_sources:
         data = response.content.decode('utf-8')
         df = pd.read_csv(io.StringIO(data))
 
-        # CSV olarak kaydet
-        csv_filename = f'{csv_dir}TUR_{satellite}_{timestamp}.csv'
-        df.to_csv(csv_filename, index=False)
-        logging.info(f"Veriler CSV formatında '{csv_filename}' olarak kaydedildi.")
+        # CSV olarak kaydet (tek bir dosya kullanarak güncelle)
+        csv_filename = f'{csv_dir}TUR_{satellite}.csv'  # Sabit dosya adı
+        df.to_csv(csv_filename, mode='a', header=not os.path.exists(csv_filename), index=False)
+        logging.info(f"Veriler CSV formatında '{csv_filename}' olarak güncellendi.")
 
-        # JSON olarak kaydet
-        json_filename = f'{json_dir}TUR_{satellite}_{timestamp}.json'
+        # JSON olarak kaydet (tek bir dosya kullanarak güncelle)
+        json_filename = f'{json_dir}TUR_{satellite}.json'  # Sabit dosya adı
         df.to_json(json_filename, orient='records')
-        logging.info(f"Veriler JSON formatında '{json_filename}' olarak kaydedildi.")
+        logging.info(f"Veriler JSON formatında '{json_filename}' olarak güncellendi.")
 
-        # SQLite veritabanına kaydet
-        sqlite_filename = f'{sqlite_dir}TUR_{satellite}_{timestamp}.db'
+        # SQLite veritabanına kaydet (verileri ekleyerek devam et)
+        sqlite_filename = f'{sqlite_dir}TUR_fire_data.db'  # Sabit dosya adı
         conn = sqlite3.connect(sqlite_filename)
-        df.to_sql('fire_data', conn, if_exists='replace', index=False)
+        df.to_sql('fire_data', conn, if_exists='append', index=False)  # Verileri ekle
         conn.close()
-        logging.info(f"Veriler SQLite veritabanına '{sqlite_filename}' olarak kaydedildi.")
+        logging.info(f"Veriler SQLite veritabanına '{sqlite_filename}' olarak eklendi.")
     
     except RequestException as e:
         logging.error(f"API isteği sırasında hata oluştu: {e}")
