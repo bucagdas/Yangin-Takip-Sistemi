@@ -1,0 +1,4 @@
+country_id,latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,bright_ti5,frp,daynight
+TUR,38.73752,26.9477,299.34,0.5,0.66,2024-10-13,102,N21,VIIRS,n,2.0NRT,289.06,1.52,N
+TUR,38.7431,26.95066,299.03,0.5,0.66,2024-10-13,102,N21,VIIRS,n,2.0NRT,288.08,1.52,N
+TUR,39.86452,26.24288,307.68,0.43,0.62,2024-10-13,102,N21,VIIRS,n,2.0NRT,288.35,1.39,N
