@@ -2,29 +2,8 @@
 
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
-### Özellikler:
-- **Üç uydu** ile yangın verilerini toplar.
-- Veriler, **sıcaklık**, **parlaklık** ve **güven seviyesi** bilgilerini içerir.
-- **Gece ve gündüz** yangın tespitlerini ayırır.
-- **JSON, CSV ve SQLite** formatlarında saklanır.
-- **Ülke kodları** ve **kullanılabilir uydular** bilgileri de otomatik olarak çekilir.
-- **main.py** içerisinde **uydu bilgilerini** dinamik olarak ayarlayabilirsiniz:
-
-```python
-satellite_sources = ['VIIRS_NOAA20_NRT', 'VIIRS_NOAA21_NRT', 'VIIRS_SNPP_NRT']
-```
-- **main.py** içerisinde ülke kodu ve gün aralığı parametreleri dinamik olarak ayarlanabilir:
-
-```python
-country_code = 'TUR'  # Ülke kodu burada ayarlanabilir
-days = 1  # Son 24 saatlik veriler için gün aralığı
-```
-
-### `update_readme.py` Ne Yapar?
-Bu script verilerin nasıl kullanılabileceğine dair bir örnektir. Script çekilen son verileri işleyerek, **README.md** dosyasına bir tablo halinde kaydeder. Tabloda yangınların enlem, boylam, sıcaklık, güven seviyesi ve gündüz/gece bilgileri yer alır. Güncellemeler her çalıştırıldığında otomatik olarak yapılır ve dosyanın üzerine yazılır, böylece en güncel veriler her zaman README.md dosyasında bulunur.
-
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-10-13 18:26:33 (UTC)
+### Son Güncelleme: 2024-10-13 18:28:44 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
