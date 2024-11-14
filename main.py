@@ -69,10 +69,10 @@ for satellite in satellite_sources:
         df.to_json(json_filename, orient='records')
         logging.info(f"Veriler JSON formatında '{json_filename}' olarak güncellendi.")
 
-        # SQLite veritabanına kaydet (verileri ekleyerek devam et)
+        # SQLite veritabanına kaydet 
         sqlite_filename = f'{sqlite_dir}TUR_fire_data.db'  # Sabit dosya adı
         conn = sqlite3.connect(sqlite_filename)
-        df.to_sql('fire_data', conn, if_exists='append', index=False)  # Verileri ekle
+        df.to_sql('fire_data', conn, if_exists='replace', index=False)  # Verileri ekle
         conn.close()
         logging.info(f"Veriler SQLite veritabanına '{sqlite_filename}' olarak eklendi.")
     
