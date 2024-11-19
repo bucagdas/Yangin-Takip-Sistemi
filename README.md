@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-11-19 22:25:00 (UTC)
+### Son Güncelleme: 2024-11-19 22:41:08 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -349,6 +349,23 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [40.68086, 26.13857](https://www.google.com/maps?q=40.68086,26.13857) | 2024-11-19 11:14 | 335.66 | 7.0 | Orta | Gündüz |
 | [40.852, 27.15529](https://www.google.com/maps?q=40.852,27.15529) | 2024-11-19 11:14 | 330.63 | 2.65 | Orta | Gündüz |
 | [41.0448, 26.36625](https://www.google.com/maps?q=41.0448,26.36625) | 2024-11-19 11:14 | 330.07 | 2.0 | Orta | Gündüz |
+| [36.96877, 40.21603](https://www.google.com/maps?q=36.96877,40.21603) | 2024-11-19 09:32 | 335.6 | 2.33 | Orta | Gündüz |
+| [36.96977, 40.21993](https://www.google.com/maps?q=36.96977,40.21993) | 2024-11-19 09:32 | 325.81 | 2.33 | Orta | Gündüz |
+| [37.00478, 38.94905](https://www.google.com/maps?q=37.00478,38.94905) | 2024-11-19 09:32 | 334.87 | 1.72 | Orta | Gündüz |
+| [37.02402, 40.27949](https://www.google.com/maps?q=37.02402,40.27949) | 2024-11-19 09:32 | 367.0 | 11.66 | Yüksek | Gündüz |
+| [37.025, 40.28332](https://www.google.com/maps?q=37.025,40.28332) | 2024-11-19 09:32 | 367.0 | 11.66 | Yüksek | Gündüz |
+| [37.03448, 39.1483](https://www.google.com/maps?q=37.03448,39.1483) | 2024-11-19 09:32 | 339.02 | 5.77 | Orta | Gündüz |
+| [37.09963, 39.62096](https://www.google.com/maps?q=37.09963,39.62096) | 2024-11-19 09:32 | 329.37 | 2.6 | Orta | Gündüz |
+| [36.89905, 40.17004](https://www.google.com/maps?q=36.89905,40.17004) | 2024-11-19 11:14 | 326.39 | 2.32 | Orta | Gündüz |
+| [36.99127, 40.35194](https://www.google.com/maps?q=36.99127,40.35194) | 2024-11-19 11:14 | 330.26 | 3.88 | Orta | Gündüz |
+| [37.12304, 39.20984](https://www.google.com/maps?q=37.12304,39.20984) | 2024-11-19 11:14 | 338.98 | 5.63 | Orta | Gündüz |
+| [37.78894, 40.72139](https://www.google.com/maps?q=37.78894,40.72139) | 2024-11-19 11:14 | 367.0 | 17.45 | Yüksek | Gündüz |
+| [39.82009, 26.22698](https://www.google.com/maps?q=39.82009,26.22698) | 2024-11-19 11:14 | 337.62 | 3.31 | Orta | Gündüz |
+| [40.62921, 26.17286](https://www.google.com/maps?q=40.62921,26.17286) | 2024-11-19 11:14 | 330.09 | 1.34 | Orta | Gündüz |
+| [40.63253, 26.17206](https://www.google.com/maps?q=40.63253,26.17206) | 2024-11-19 11:14 | 333.97 | 3.72 | Orta | Gündüz |
+| [40.68086, 26.13857](https://www.google.com/maps?q=40.68086,26.13857) | 2024-11-19 11:14 | 335.66 | 7.0 | Orta | Gündüz |
+| [40.852, 27.15529](https://www.google.com/maps?q=40.852,27.15529) | 2024-11-19 11:14 | 330.63 | 2.65 | Orta | Gündüz |
+| [41.0448, 26.36625](https://www.google.com/maps?q=41.0448,26.36625) | 2024-11-19 11:14 | 330.07 | 2.0 | Orta | Gündüz |
 | [39.86517, 26.24519](https://www.google.com/maps?q=39.86517,26.24519) | 2024-11-19 01:11 | 298.24 | 1.0 | Orta | Gece |
 | [39.86622, 26.24489](https://www.google.com/maps?q=39.86622,26.24489) | 2024-11-19 01:11 | 297.95 | 1.08 | Orta | Gece |
 | [41.02003, 28.55529](https://www.google.com/maps?q=41.02003,28.55529) | 2024-11-19 01:11 | 300.24 | 1.22 | Orta | Gece |
@@ -436,6 +453,34 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [39.86517, 26.24519](https://www.google.com/maps?q=39.86517,26.24519) | 2024-11-19 01:11 | 298.24 | 1.0 | Orta | Gece |
 | [39.86622, 26.24489](https://www.google.com/maps?q=39.86622,26.24489) | 2024-11-19 01:11 | 297.95 | 1.08 | Orta | Gece |
 | [41.02003, 28.55529](https://www.google.com/maps?q=41.02003,28.55529) | 2024-11-19 01:11 | 300.24 | 1.22 | Orta | Gece |
+| [39.86517, 26.24519](https://www.google.com/maps?q=39.86517,26.24519) | 2024-11-19 01:11 | 298.24 | 1.0 | Orta | Gece |
+| [39.86622, 26.24489](https://www.google.com/maps?q=39.86622,26.24489) | 2024-11-19 01:11 | 297.95 | 1.08 | Orta | Gece |
+| [41.02003, 28.55529](https://www.google.com/maps?q=41.02003,28.55529) | 2024-11-19 01:11 | 300.24 | 1.22 | Orta | Gece |
+| [36.72478, 36.20541](https://www.google.com/maps?q=36.72478,36.20541) | 2024-11-19 10:49 | 329.16 | 3.22 | Orta | Gündüz |
+| [36.73259, 36.20926](https://www.google.com/maps?q=36.73259,36.20926) | 2024-11-19 10:49 | 333.29 | 5.82 | Orta | Gündüz |
+| [36.7464, 36.20142](https://www.google.com/maps?q=36.7464,36.20142) | 2024-11-19 10:49 | 331.5 | 3.68 | Orta | Gündüz |
+| [36.83569, 38.86062](https://www.google.com/maps?q=36.83569,38.86062) | 2024-11-19 10:49 | 326.74 | 4.56 | Orta | Gündüz |
+| [36.90057, 40.16772](https://www.google.com/maps?q=36.90057,40.16772) | 2024-11-19 10:49 | 344.88 | 9.2 | Orta | Gündüz |
+| [36.90168, 40.16986](https://www.google.com/maps?q=36.90168,40.16986) | 2024-11-19 10:49 | 337.76 | 5.97 | Orta | Gündüz |
+| [36.90171, 38.86768](https://www.google.com/maps?q=36.90171,38.86768) | 2024-11-19 10:49 | 340.29 | 7.13 | Orta | Gündüz |
+| [36.9545, 39.02659](https://www.google.com/maps?q=36.9545,39.02659) | 2024-11-19 10:49 | 334.64 | 2.62 | Orta | Gündüz |
+| [36.96067, 38.95853](https://www.google.com/maps?q=36.96067,38.95853) | 2024-11-19 10:49 | 338.18 | 4.48 | Orta | Gündüz |
+| [36.98862, 40.35732](https://www.google.com/maps?q=36.98862,40.35732) | 2024-11-19 10:49 | 337.02 | 6.45 | Orta | Gündüz |
+| [37.01505, 38.955](https://www.google.com/maps?q=37.01505,38.955) | 2024-11-19 10:49 | 328.96 | 4.2 | Orta | Gündüz |
+| [37.0171, 38.95652](https://www.google.com/maps?q=37.0171,38.95652) | 2024-11-19 10:49 | 338.48 | 7.45 | Orta | Gündüz |
+| [37.03418, 39.15039](https://www.google.com/maps?q=37.03418,39.15039) | 2024-11-19 10:49 | 339.26 | 4.45 | Orta | Gündüz |
+| [37.03464, 39.14746](https://www.google.com/maps?q=37.03464,39.14746) | 2024-11-19 10:49 | 340.34 | 6.47 | Orta | Gündüz |
+| [37.06166, 40.55946](https://www.google.com/maps?q=37.06166,40.55946) | 2024-11-19 10:49 | 328.75 | 7.08 | Orta | Gündüz |
+| [37.12125, 39.20789](https://www.google.com/maps?q=37.12125,39.20789) | 2024-11-19 10:49 | 332.48 | 4.18 | Orta | Gündüz |
+| [37.12172, 39.21276](https://www.google.com/maps?q=37.12172,39.21276) | 2024-11-19 10:49 | 337.18 | 4.18 | Orta | Gündüz |
+| [37.28181, 39.69179](https://www.google.com/maps?q=37.28181,39.69179) | 2024-11-19 10:49 | 326.07 | 6.12 | Orta | Gündüz |
+| [37.78733, 40.7141](https://www.google.com/maps?q=37.78733,40.7141) | 2024-11-19 10:49 | 347.71 | 16.08 | Orta | Gündüz |
+| [39.82005, 26.22457](https://www.google.com/maps?q=39.82005,26.22457) | 2024-11-19 10:51 | 330.23 | 7.64 | Orta | Gündüz |
+| [40.50392, 26.73219](https://www.google.com/maps?q=40.50392,26.73219) | 2024-11-19 10:51 | 328.72 | 3.72 | Orta | Gündüz |
+| [40.68145, 26.1372](https://www.google.com/maps?q=40.68145,26.1372) | 2024-11-19 10:51 | 336.02 | 4.36 | Orta | Gündüz |
+| [41.01674, 27.9641](https://www.google.com/maps?q=41.01674,27.9641) | 2024-11-19 10:51 | 328.19 | 1.87 | Orta | Gündüz |
+| [41.26477, 31.42465](https://www.google.com/maps?q=41.26477,31.42465) | 2024-11-19 10:51 | 334.24 | 4.42 | Orta | Gündüz |
+| [41.69999, 27.00688](https://www.google.com/maps?q=41.69999,27.00688) | 2024-11-19 10:51 | 328.53 | 5.09 | Orta | Gündüz |
 | [39.86517, 26.24519](https://www.google.com/maps?q=39.86517,26.24519) | 2024-11-19 01:11 | 298.24 | 1.0 | Orta | Gece |
 | [39.86622, 26.24489](https://www.google.com/maps?q=39.86622,26.24489) | 2024-11-19 01:11 | 297.95 | 1.08 | Orta | Gece |
 | [41.02003, 28.55529](https://www.google.com/maps?q=41.02003,28.55529) | 2024-11-19 01:11 | 300.24 | 1.22 | Orta | Gece |
@@ -2054,6 +2099,27 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [37.02325, 40.27816](https://www.google.com/maps?q=37.02325,40.27816) | 2024-11-19 09:56 | 331.56 | 6.31 | Orta | Gündüz |
 | [37.28231, 39.69036](https://www.google.com/maps?q=37.28231,39.69036) | 2024-11-19 09:56 | 328.18 | 1.58 | Orta | Gündüz |
 | [37.77429, 40.89543](https://www.google.com/maps?q=37.77429,40.89543) | 2024-11-19 09:58 | 340.85 | 4.97 | Orta | Gündüz |
+| [36.26396, 33.7258](https://www.google.com/maps?q=36.26396,33.7258) | 2024-11-19 00:15 | 296.64 | 0.63 | Orta | Gece |
+| [36.74604, 36.19668](https://www.google.com/maps?q=36.74604,36.19668) | 2024-11-19 00:15 | 305.94 | 1.12 | Orta | Gece |
+| [36.86846, 34.76243](https://www.google.com/maps?q=36.86846,34.76243) | 2024-11-19 00:15 | 297.11 | 0.55 | Orta | Gece |
+| [38.42745, 27.21781](https://www.google.com/maps?q=38.42745,27.21781) | 2024-11-19 00:15 | 301.97 | 0.68 | Orta | Gece |
+| [38.75238, 26.93492](https://www.google.com/maps?q=38.75238,26.93492) | 2024-11-19 00:15 | 303.01 | 0.85 | Orta | Gece |
+| [39.09219, 27.51021](https://www.google.com/maps?q=39.09219,27.51021) | 2024-11-19 00:15 | 300.57 | 0.95 | Orta | Gece |
+| [39.18258, 27.4992](https://www.google.com/maps?q=39.18258,27.4992) | 2024-11-19 00:15 | 296.53 | 0.63 | Orta | Gece |
+| [39.86568, 26.24208](https://www.google.com/maps?q=39.86568,26.24208) | 2024-11-19 00:15 | 317.87 | 2.35 | Orta | Gece |
+| [41.02004, 28.5546](https://www.google.com/maps?q=41.02004,28.5546) | 2024-11-19 00:15 | 312.7 | 1.55 | Orta | Gece |
+| [41.62984, 27.68478](https://www.google.com/maps?q=41.62984,27.68478) | 2024-11-19 00:15 | 299.44 | 1.06 | Orta | Gece |
+| [41.7958, 26.70178](https://www.google.com/maps?q=41.7958,26.70178) | 2024-11-19 00:15 | 295.91 | 0.66 | Orta | Gece |
+| [36.85871, 38.66526](https://www.google.com/maps?q=36.85871,38.66526) | 2024-11-19 09:56 | 355.85 | 9.92 | Orta | Gündüz |
+| [36.94635, 39.5882](https://www.google.com/maps?q=36.94635,39.5882) | 2024-11-19 09:56 | 326.33 | 2.68 | Orta | Gündüz |
+| [37.01415, 40.12568](https://www.google.com/maps?q=37.01415,40.12568) | 2024-11-19 09:56 | 343.84 | 13.33 | Orta | Gündüz |
+| [37.02325, 40.27816](https://www.google.com/maps?q=37.02325,40.27816) | 2024-11-19 09:56 | 331.56 | 6.31 | Orta | Gündüz |
+| [37.28231, 39.69036](https://www.google.com/maps?q=37.28231,39.69036) | 2024-11-19 09:56 | 328.18 | 1.58 | Orta | Gündüz |
+| [37.77429, 40.89543](https://www.google.com/maps?q=37.77429,40.89543) | 2024-11-19 09:58 | 340.85 | 4.97 | Orta | Gündüz |
+| [39.81884, 26.22857](https://www.google.com/maps?q=39.81884,26.22857) | 2024-11-19 11:38 | 337.56 | 3.93 | Orta | Gündüz |
+| [40.67904, 26.15512](https://www.google.com/maps?q=40.67904,26.15512) | 2024-11-19 11:38 | 337.94 | 5.02 | Orta | Gündüz |
+| [40.68192, 26.13883](https://www.google.com/maps?q=40.68192,26.13883) | 2024-11-19 11:38 | 336.88 | 3.88 | Orta | Gündüz |
+| [41.11541, 27.41208](https://www.google.com/maps?q=41.11541,27.41208) | 2024-11-19 11:40 | 327.25 | 2.96 | Orta | Gündüz |
 | [36.26396, 33.7258](https://www.google.com/maps?q=36.26396,33.7258) | 2024-11-19 00:15 | 296.64 | 0.63 | Orta | Gece |
 | [36.74604, 36.19668](https://www.google.com/maps?q=36.74604,36.19668) | 2024-11-19 00:15 | 305.94 | 1.12 | Orta | Gece |
 | [36.86846, 34.76243](https://www.google.com/maps?q=36.86846,34.76243) | 2024-11-19 00:15 | 297.11 | 0.55 | Orta | Gece |
