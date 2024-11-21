@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-11-21 07:46:14 (UTC)
+### Son Güncelleme: 2024-11-21 07:56:46 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -1214,6 +1214,8 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [41.26855, 31.42498](https://www.google.com/maps?q=41.26855,31.42498) | 2024-11-21 00:54 | 297.19 | 0.82 | Orta | Gece |
 | [41.26564, 31.4223](https://www.google.com/maps?q=41.26564,31.4223) | 2024-11-21 00:54 | 299.71 | 1.14 | Orta | Gece |
 | [41.26855, 31.42498](https://www.google.com/maps?q=41.26855,31.42498) | 2024-11-21 00:54 | 297.19 | 0.82 | Orta | Gece |
+| [41.26564, 31.4223](https://www.google.com/maps?q=41.26564,31.4223) | 2024-11-21 00:54 | 299.71 | 1.14 | Orta | Gece |
+| [41.26855, 31.42498](https://www.google.com/maps?q=41.26855,31.42498) | 2024-11-21 00:54 | 297.19 | 0.82 | Orta | Gece |
 | [36.70121, 39.16901](https://www.google.com/maps?q=36.70121,39.16901) | 2024-11-20 10:32 | 333.87 | 2.93 | Orta | Gündüz |
 | [36.71938, 36.2034](https://www.google.com/maps?q=36.71938,36.2034) | 2024-11-20 10:32 | 329.38 | 4.76 | Orta | Gündüz |
 | [36.73057, 36.20952](https://www.google.com/maps?q=36.73057,36.20952) | 2024-11-20 10:32 | 326.28 | 4.12 | Düşük | Gündüz |
@@ -3125,6 +3127,18 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [40.98724, 27.31143](https://www.google.com/maps?q=40.98724,27.31143) | 2024-11-20 10:34 | 328.0 | 4.46 | Orta | Gündüz |
 | [41.04902, 27.11312](https://www.google.com/maps?q=41.04902,27.11312) | 2024-11-20 10:34 | 337.71 | 10.18 | Orta | Gündüz |
 | [41.24176, 36.46328](https://www.google.com/maps?q=41.24176,36.46328) | 2024-11-20 10:34 | 330.22 | 3.08 | Orta | Gündüz |
+| [39.4834, 30.04082](https://www.google.com/maps?q=39.4834,30.04082) | 2024-11-21 00:32 | 299.6 | 1.77 | Orta | Gece |
+| [39.86478, 26.24216](https://www.google.com/maps?q=39.86478,26.24216) | 2024-11-21 00:32 | 303.63 | 1.47 | Orta | Gece |
+| [39.86592, 26.24261](https://www.google.com/maps?q=39.86592,26.24261) | 2024-11-21 00:32 | 302.57 | 1.18 | Orta | Gece |
+| [40.25954, 30.04087](https://www.google.com/maps?q=40.25954,30.04087) | 2024-11-21 00:32 | 295.32 | 0.77 | Orta | Gece |
+| [40.76457, 32.21788](https://www.google.com/maps?q=40.76457,32.21788) | 2024-11-21 00:32 | 300.43 | 0.67 | Orta | Gece |
+| [41.02129, 28.55439](https://www.google.com/maps?q=41.02129,28.55439) | 2024-11-21 00:32 | 313.14 | 2.31 | Orta | Gece |
+| [41.17169, 32.63237](https://www.google.com/maps?q=41.17169,32.63237) | 2024-11-21 00:32 | 302.76 | 1.02 | Orta | Gece |
+| [41.17306, 32.6335](https://www.google.com/maps?q=41.17306,32.6335) | 2024-11-21 00:32 | 307.99 | 1.6 | Orta | Gece |
+| [41.1765, 32.63483](https://www.google.com/maps?q=41.1765,32.63483) | 2024-11-21 00:32 | 301.74 | 1.02 | Orta | Gece |
+| [41.23907, 36.46188](https://www.google.com/maps?q=41.23907,36.46188) | 2024-11-21 00:32 | 302.16 | 1.73 | Orta | Gece |
+| [41.2662, 31.42291](https://www.google.com/maps?q=41.2662,31.42291) | 2024-11-21 00:32 | 300.65 | 2.74 | Orta | Gece |
+| [41.26664, 31.42202](https://www.google.com/maps?q=41.26664,31.42202) | 2024-11-21 00:32 | 301.99 | 1.68 | Orta | Gece |
 | [39.4834, 30.04082](https://www.google.com/maps?q=39.4834,30.04082) | 2024-11-21 00:32 | 299.6 | 1.77 | Orta | Gece |
 | [39.86478, 26.24216](https://www.google.com/maps?q=39.86478,26.24216) | 2024-11-21 00:32 | 303.63 | 1.47 | Orta | Gece |
 | [39.86592, 26.24261](https://www.google.com/maps?q=39.86592,26.24261) | 2024-11-21 00:32 | 302.57 | 1.18 | Orta | Gece |
