@@ -3,7 +3,7 @@ name: Turkiye Fire Data Workflow
 on:
   workflow_dispatch:  # Allows manual triggering from the GitHub UI
   schedule:
-    - cron: '*/10 * * * *'  # Run every 10 minutes
+    - cron: '0 */4 * * *'  # Run every 3 hours
 
 jobs:
   fire_data:
