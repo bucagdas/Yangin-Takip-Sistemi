@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-12-06 04:11:56 (UTC)
+### Son Güncelleme: 2024-12-06 08:12:38 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -21,6 +21,11 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [37.15949, 40.0632](https://www.google.com/maps?q=37.15949,40.0632) | 2024-12-05 10:49 | 325.63 | 3.47 | Orta | Gündüz |
 | [37.23509, 36.01866](https://www.google.com/maps?q=37.23509,36.01866) | 2024-12-05 10:49 | 331.8 | 10.17 | Orta | Gündüz |
 | [38.34053, 43.18391](https://www.google.com/maps?q=38.34053,43.18391) | 2024-12-05 10:49 | 342.16 | 7.25 | Orta | Gündüz |
+| [41.01834, 28.55363](https://www.google.com/maps?q=41.01834,28.55363) | 2024-12-06 00:49 | 306.15 | 1.39 | Orta | Gece |
+| [41.25384, 31.41203](https://www.google.com/maps?q=41.25384,31.41203) | 2024-12-06 00:49 | 298.64 | 1.03 | Orta | Gece |
+| [41.2634, 31.42375](https://www.google.com/maps?q=41.2634,31.42375) | 2024-12-06 00:49 | 298.87 | 1.56 | Orta | Gece |
+| [41.44167, 32.51249](https://www.google.com/maps?q=41.44167,32.51249) | 2024-12-06 00:49 | 305.46 | 1.71 | Orta | Gece |
+| [41.4427, 32.51565](https://www.google.com/maps?q=41.4427,32.51565) | 2024-12-06 00:49 | 296.37 | 0.9 | Orta | Gece |
 | [41.01834, 28.55363](https://www.google.com/maps?q=41.01834,28.55363) | 2024-12-06 00:49 | 306.15 | 1.39 | Orta | Gece |
 | [41.25384, 31.41203](https://www.google.com/maps?q=41.25384,31.41203) | 2024-12-06 00:49 | 298.64 | 1.03 | Orta | Gece |
 | [41.2634, 31.42375](https://www.google.com/maps?q=41.2634,31.42375) | 2024-12-06 00:49 | 298.87 | 1.56 | Orta | Gece |
