@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2024-12-15 04:11:01 (UTC)
+### Son Güncelleme: 2024-12-15 08:11:12 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -358,6 +358,16 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [38.65784, 30.61649](https://www.google.com/maps?q=38.65784,30.61649) | 2024-12-15 00:07 | 299.77 | 0.78 | Orta | Gece |
 | [39.48353, 30.0432](https://www.google.com/maps?q=39.48353,30.0432) | 2024-12-15 00:07 | 306.59 | 0.8 | Orta | Gece |
 | [40.75879, 29.75972](https://www.google.com/maps?q=40.75879,29.75972) | 2024-12-15 00:07 | 304.99 | 1.59 | Orta | Gece |
+| [36.26184, 33.73122](https://www.google.com/maps?q=36.26184,33.73122) | 2024-12-15 00:05 | 295.28 | 0.39 | Orta | Gece |
+| [36.69381, 36.20409](https://www.google.com/maps?q=36.69381,36.20409) | 2024-12-15 00:05 | 298.26 | 1.44 | Orta | Gece |
+| [36.71618, 36.19802](https://www.google.com/maps?q=36.71618,36.19802) | 2024-12-15 00:05 | 305.09 | 3.02 | Orta | Gece |
+| [36.7209, 36.2](https://www.google.com/maps?q=36.7209,36.2) | 2024-12-15 00:05 | 331.75 | 3.02 | Orta | Gece |
+| [38.34861, 27.08242](https://www.google.com/maps?q=38.34861,27.08242) | 2024-12-15 00:05 | 298.98 | 0.76 | Orta | Gece |
+| [41.24414, 36.46227](https://www.google.com/maps?q=41.24414,36.46227) | 2024-12-15 00:05 | 309.61 | 3.63 | Orta | Gece |
+| [37.29253, 37.15792](https://www.google.com/maps?q=37.29253,37.15792) | 2024-12-15 00:07 | 300.25 | 0.7 | Orta | Gece |
+| [38.65784, 30.61649](https://www.google.com/maps?q=38.65784,30.61649) | 2024-12-15 00:07 | 299.77 | 0.78 | Orta | Gece |
+| [39.48353, 30.0432](https://www.google.com/maps?q=39.48353,30.0432) | 2024-12-15 00:07 | 306.59 | 0.8 | Orta | Gece |
+| [40.75879, 29.75972](https://www.google.com/maps?q=40.75879,29.75972) | 2024-12-15 00:07 | 304.99 | 1.59 | Orta | Gece |
 | [36.71151, 39.12429](https://www.google.com/maps?q=36.71151,39.12429) | 2024-12-14 10:28 | 332.41 | 2.45 | Orta | Gündüz |
 | [36.71956, 36.20342](https://www.google.com/maps?q=36.71956,36.20342) | 2024-12-14 10:28 | 329.46 | 3.95 | Orta | Gündüz |
 | [36.72183, 38.76453](https://www.google.com/maps?q=36.72183,38.76453) | 2024-12-14 10:28 | 327.4 | 1.75 | Orta | Gündüz |
@@ -636,6 +646,10 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [38.69088, 34.75417](https://www.google.com/maps?q=38.69088,34.75417) | 2024-12-14 10:28 | 343.65 | 5.93 | Orta | Gündüz |
 | [39.0639, 35.55489](https://www.google.com/maps?q=39.0639,35.55489) | 2024-12-14 10:28 | 325.1 | 5.45 | Orta | Gündüz |
 | [41.56591, 32.42995](https://www.google.com/maps?q=41.56591,32.42995) | 2024-12-14 10:30 | 325.73 | 2.61 | Orta | Gündüz |
+| [36.7177, 36.19855](https://www.google.com/maps?q=36.7177,36.19855) | 2024-12-15 00:28 | 318.25 | 1.83 | Orta | Gece |
+| [36.72178, 36.20236](https://www.google.com/maps?q=36.72178,36.20236) | 2024-12-15 00:28 | 301.96 | 1.76 | Orta | Gece |
+| [39.48574, 30.04091](https://www.google.com/maps?q=39.48574,30.04091) | 2024-12-15 00:28 | 298.91 | 1.68 | Orta | Gece |
+| [41.24383, 36.46126](https://www.google.com/maps?q=41.24383,36.46126) | 2024-12-15 00:28 | 296.73 | 1.59 | Orta | Gece |
 | [36.7177, 36.19855](https://www.google.com/maps?q=36.7177,36.19855) | 2024-12-15 00:28 | 318.25 | 1.83 | Orta | Gece |
 | [36.72178, 36.20236](https://www.google.com/maps?q=36.72178,36.20236) | 2024-12-15 00:28 | 301.96 | 1.76 | Orta | Gece |
 | [39.48574, 30.04091](https://www.google.com/maps?q=39.48574,30.04091) | 2024-12-15 00:28 | 298.91 | 1.68 | Orta | Gece |
