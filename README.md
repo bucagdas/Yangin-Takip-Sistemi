@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2025-01-31 04:10:20 (UTC)
+### Son Güncelleme: 2025-01-31 08:11:21 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -47,6 +47,9 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [41.11866, 40.94938](https://www.google.com/maps?q=41.11866,40.94938) | 2025-01-30 10:25 | 328.78 | 4.47 | Orta | Gündüz |
 | [41.12064, 40.95121](https://www.google.com/maps?q=41.12064,40.95121) | 2025-01-30 10:25 | 325.59 | 4.16 | Orta | Gündüz |
 | [41.24215, 36.46552](https://www.google.com/maps?q=41.24215,36.46552) | 2025-01-30 10:25 | 336.6 | 3.5 | Orta | Gündüz |
+| [36.26118, 33.72982](https://www.google.com/maps?q=36.26118,33.72982) | 2025-01-31 00:26 | 296.73 | 0.67 | Orta | Gece |
+| [36.72059, 36.19909](https://www.google.com/maps?q=36.72059,36.19909) | 2025-01-31 00:26 | 300.45 | 2.6 | Orta | Gece |
+| [38.47406, 29.19498](https://www.google.com/maps?q=38.47406,29.19498) | 2025-01-31 00:26 | 297.14 | 0.68 | Orta | Gece |
 | [36.26118, 33.72982](https://www.google.com/maps?q=36.26118,33.72982) | 2025-01-31 00:26 | 296.73 | 0.67 | Orta | Gece |
 | [36.72059, 36.19909](https://www.google.com/maps?q=36.72059,36.19909) | 2025-01-31 00:26 | 300.45 | 2.6 | Orta | Gece |
 | [38.47406, 29.19498](https://www.google.com/maps?q=38.47406,29.19498) | 2025-01-31 00:26 | 297.14 | 0.68 | Orta | Gece |
@@ -148,6 +151,11 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [36.71833, 36.20084](https://www.google.com/maps?q=36.71833,36.20084) | 2025-01-31 00:00 | 321.86 | 4.23 | Orta | Gece |
 | [37.77218, 27.43801](https://www.google.com/maps?q=37.77218,27.43801) | 2025-01-31 00:00 | 301.85 | 0.89 | Orta | Gece |
 | [38.65856, 30.62009](https://www.google.com/maps?q=38.65856,30.62009) | 2025-01-31 00:00 | 297.73 | 0.94 | Orta | Gece |
+| [36.26178, 33.72869](https://www.google.com/maps?q=36.26178,33.72869) | 2025-01-31 00:00 | 306.66 | 2.18 | Orta | Gece |
+| [36.26254, 33.72798](https://www.google.com/maps?q=36.26254,33.72798) | 2025-01-31 00:00 | 308.96 | 2.02 | Orta | Gece |
+| [36.71833, 36.20084](https://www.google.com/maps?q=36.71833,36.20084) | 2025-01-31 00:00 | 321.86 | 4.23 | Orta | Gece |
+| [37.77218, 27.43801](https://www.google.com/maps?q=37.77218,27.43801) | 2025-01-31 00:00 | 301.85 | 0.89 | Orta | Gece |
+| [38.65856, 30.62009](https://www.google.com/maps?q=38.65856,30.62009) | 2025-01-31 00:00 | 297.73 | 0.94 | Orta | Gece |
 | [37.1385, 40.30667](https://www.google.com/maps?q=37.1385,40.30667) | 2025-01-30 09:09 | 334.27 | 10.68 | Orta | Gündüz |
 | [37.13955, 40.31078](https://www.google.com/maps?q=37.13955,40.31078) | 2025-01-30 09:09 | 337.85 | 4.71 | Orta | Gündüz |
 | [38.82842, 40.63688](https://www.google.com/maps?q=38.82842,40.63688) | 2025-01-30 09:09 | 325.01 | 2.62 | Orta | Gündüz |
@@ -221,6 +229,7 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [37.51297, 33.91922](https://www.google.com/maps?q=37.51297,33.91922) | 2025-01-30 10:49 | 326.8 | 2.81 | Orta | Gündüz |
 | [37.77295, 40.67316](https://www.google.com/maps?q=37.77295,40.67316) | 2025-01-30 10:49 | 326.96 | 2.42 | Orta | Gündüz |
 | [37.84365, 40.87502](https://www.google.com/maps?q=37.84365,40.87502) | 2025-01-30 10:49 | 335.09 | 2.6 | Orta | Gündüz |
+| [38.74279, 26.94862](https://www.google.com/maps?q=38.74279,26.94862) | 2025-01-31 00:47 | 300.03 | 0.75 | Orta | Gece |
 | [38.74279, 26.94862](https://www.google.com/maps?q=38.74279,26.94862) | 2025-01-31 00:47 | 300.03 | 0.75 | Orta | Gece |
 
 ## Yazar
