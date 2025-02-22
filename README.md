@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2025-02-22 04:10:20 (UTC)
+### Son Güncelleme: 2025-02-22 08:10:01 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -29,6 +29,16 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [38.49807, 27.14815](https://www.google.com/maps?q=38.49807,27.14815) | 2025-02-21 11:53 | 357.07 | 5.6 | Orta | Gündüz |
 | [40.7886, 26.77601](https://www.google.com/maps?q=40.7886,26.77601) | 2025-02-21 11:53 | 327.88 | 1.38 | Orta | Gündüz |
 | [40.7907, 26.77588](https://www.google.com/maps?q=40.7907,26.77588) | 2025-02-21 11:53 | 325.11 | 1.45 | Orta | Gündüz |
+| [36.71682, 36.19894](https://www.google.com/maps?q=36.71682,36.19894) | 2025-02-22 00:11 | 300.5 | 1.16 | Orta | Gece |
+| [38.42596, 27.21605](https://www.google.com/maps?q=38.42596,27.21605) | 2025-02-22 00:11 | 303.09 | 1.12 | Orta | Gece |
+| [38.73695, 26.94898](https://www.google.com/maps?q=38.73695,26.94898) | 2025-02-22 00:11 | 309.62 | 1.96 | Orta | Gece |
+| [38.73773, 26.94445](https://www.google.com/maps?q=38.73773,26.94445) | 2025-02-22 00:11 | 328.38 | 1.96 | Orta | Gece |
+| [38.74009, 26.93081](https://www.google.com/maps?q=38.74009,26.93081) | 2025-02-22 00:11 | 306.37 | 1.34 | Orta | Gece |
+| [38.74107, 26.94539](https://www.google.com/maps?q=38.74107,26.94539) | 2025-02-22 00:11 | 297.5 | 0.88 | Orta | Gece |
+| [38.74342, 26.93175](https://www.google.com/maps?q=38.74342,26.93175) | 2025-02-22 00:11 | 304.21 | 0.72 | Orta | Gece |
+| [40.44147, 27.14098](https://www.google.com/maps?q=40.44147,27.14098) | 2025-02-22 00:11 | 302.18 | 1.19 | Orta | Gece |
+| [41.63493, 27.50776](https://www.google.com/maps?q=41.63493,27.50776) | 2025-02-22 00:11 | 298.06 | 0.59 | Orta | Gece |
+| [37.25447, 30.44299](https://www.google.com/maps?q=37.25447,30.44299) | 2025-02-22 00:13 | 298.72 | 1.3 | Orta | Gece |
 | [36.71682, 36.19894](https://www.google.com/maps?q=36.71682,36.19894) | 2025-02-22 00:11 | 300.5 | 1.16 | Orta | Gece |
 | [38.42596, 27.21605](https://www.google.com/maps?q=38.42596,27.21605) | 2025-02-22 00:11 | 303.09 | 1.12 | Orta | Gece |
 | [38.73695, 26.94898](https://www.google.com/maps?q=38.73695,26.94898) | 2025-02-22 00:11 | 309.62 | 1.96 | Orta | Gece |
@@ -69,6 +79,8 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [40.17837, 34.24413](https://www.google.com/maps?q=40.17837,34.24413) | 2025-02-21 10:36 | 337.91 | 3.16 | Orta | Gündüz |
 | [40.24017, 34.18134](https://www.google.com/maps?q=40.24017,34.18134) | 2025-02-21 10:36 | 338.67 | 1.62 | Orta | Gündüz |
 | [38.49875, 27.1504](https://www.google.com/maps?q=38.49875,27.1504) | 2025-02-21 12:16 | 335.22 | 6.55 | Orta | Gündüz |
+| [37.25256, 30.44122](https://www.google.com/maps?q=37.25256,30.44122) | 2025-02-22 00:37 | 304.88 | 1.05 | Orta | Gece |
+| [38.75192, 26.93426](https://www.google.com/maps?q=38.75192,26.93426) | 2025-02-22 00:37 | 308.23 | 1.23 | Orta | Gece |
 | [37.25256, 30.44122](https://www.google.com/maps?q=37.25256,30.44122) | 2025-02-22 00:37 | 304.88 | 1.05 | Orta | Gece |
 | [38.75192, 26.93426](https://www.google.com/maps?q=38.75192,26.93426) | 2025-02-22 00:37 | 308.23 | 1.23 | Orta | Gece |
 | [36.74416, 36.20312](https://www.google.com/maps?q=36.74416,36.20312) | 2025-02-21 09:45 | 340.93 | 4.38 | Orta | Gündüz |
