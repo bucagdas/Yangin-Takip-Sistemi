@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2025-03-12 04:11:20 (UTC)
+### Son Güncelleme: 2025-03-12 08:12:32 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -232,6 +232,12 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [41.54458, 34.73367](https://www.google.com/maps?q=41.54458,34.73367) | 2025-03-11 10:49 | 330.88 | 4.42 | Orta | Gündüz |
 | [41.57429, 34.67765](https://www.google.com/maps?q=41.57429,34.67765) | 2025-03-11 10:49 | 335.18 | 3.45 | Orta | Gündüz |
 | [41.66836, 35.80377](https://www.google.com/maps?q=41.66836,35.80377) | 2025-03-11 10:49 | 348.04 | 9.3 | Orta | Gündüz |
+| [41.26167, 31.4264](https://www.google.com/maps?q=41.26167,31.4264) | 2025-03-12 00:48 | 306.57 | 3.02 | Orta | Gece |
+| [41.26329, 31.42102](https://www.google.com/maps?q=41.26329,31.42102) | 2025-03-12 00:48 | 301.16 | 1.96 | Orta | Gece |
+| [37.25006, 30.44092](https://www.google.com/maps?q=37.25006,30.44092) | 2025-03-12 00:50 | 298.69 | 1.3 | Orta | Gece |
+| [41.25442, 31.41403](https://www.google.com/maps?q=41.25442,31.41403) | 2025-03-12 00:50 | 295.82 | 0.68 | Orta | Gece |
+| [41.25676, 31.42797](https://www.google.com/maps?q=41.25676,31.42797) | 2025-03-12 00:50 | 297.98 | 0.73 | Orta | Gece |
+| [41.26394, 31.42556](https://www.google.com/maps?q=41.26394,31.42556) | 2025-03-12 00:50 | 311.96 | 2.87 | Orta | Gece |
 | [41.26167, 31.4264](https://www.google.com/maps?q=41.26167,31.4264) | 2025-03-12 00:48 | 306.57 | 3.02 | Orta | Gece |
 | [41.26329, 31.42102](https://www.google.com/maps?q=41.26329,31.42102) | 2025-03-12 00:48 | 301.16 | 1.96 | Orta | Gece |
 | [37.25006, 30.44092](https://www.google.com/maps?q=37.25006,30.44092) | 2025-03-12 00:50 | 298.69 | 1.3 | Orta | Gece |
