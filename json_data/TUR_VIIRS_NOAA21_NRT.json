@@ -1,1 +1,1 @@
-[]
+[{"country_id":"TUR","latitude":37.01368,"longitude":36.10541,"bright_ti4":296.98,"scan":0.54,"track":0.68,"acq_date":"2025-03-24","acq_time":24,"satellite":"N21","instrument":"VIIRS","confidence":"n","version":"2.0NRT","bright_ti5":268.27,"frp":2.49,"daynight":"N"},{"country_id":"TUR","latitude":37.01424,"longitude":36.10449,"bright_ti4":298.52,"scan":0.54,"track":0.68,"acq_date":"2025-03-24","acq_time":24,"satellite":"N21","instrument":"VIIRS","confidence":"n","version":"2.0NRT","bright_ti5":268.11,"frp":1.14,"daynight":"N"}]
