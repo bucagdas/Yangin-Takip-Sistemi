@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2025-03-30 04:10:26 (UTC)
+### Son Güncelleme: 2025-03-30 08:10:58 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -49,6 +49,10 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [41.02234, 28.55369](https://www.google.com/maps?q=41.02234,28.55369) | 2025-03-30 00:35 | 296.61 | 0.61 | Orta | Gece |
 | [38.74383, 26.94653](https://www.google.com/maps?q=38.74383,26.94653) | 2025-03-30 00:37 | 298.53 | 0.81 | Orta | Gece |
 | [39.86327, 26.24542](https://www.google.com/maps?q=39.86327,26.24542) | 2025-03-30 00:37 | 297.94 | 1.36 | Orta | Gece |
+| [40.75835, 29.76351](https://www.google.com/maps?q=40.75835,29.76351) | 2025-03-30 00:35 | 295.94 | 0.65 | Orta | Gece |
+| [41.02234, 28.55369](https://www.google.com/maps?q=41.02234,28.55369) | 2025-03-30 00:35 | 296.61 | 0.61 | Orta | Gece |
+| [38.74383, 26.94653](https://www.google.com/maps?q=38.74383,26.94653) | 2025-03-30 00:37 | 298.53 | 0.81 | Orta | Gece |
+| [39.86327, 26.24542](https://www.google.com/maps?q=39.86327,26.24542) | 2025-03-30 00:37 | 297.94 | 1.36 | Orta | Gece |
 | [38.59632, 39.17085](https://www.google.com/maps?q=38.59632,39.17085) | 2025-03-29 10:13 | 337.31 | 2.87 | Orta | Gündüz |
 | [39.40583, 42.57251](https://www.google.com/maps?q=39.40583,42.57251) | 2025-03-29 10:13 | 332.18 | 5.58 | Orta | Gündüz |
 | [39.40647, 42.57703](https://www.google.com/maps?q=39.40647,42.57703) | 2025-03-29 10:13 | 333.66 | 5.51 | Orta | Gündüz |
@@ -80,6 +84,16 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [39.40647, 42.57703](https://www.google.com/maps?q=39.40647,42.57703) | 2025-03-29 10:13 | 333.66 | 5.51 | Orta | Gündüz |
 | [38.50167, 33.15158](https://www.google.com/maps?q=38.50167,33.15158) | 2025-03-29 11:51 | 337.89 | 12.99 | Orta | Gündüz |
 | [38.5056, 33.14749](https://www.google.com/maps?q=38.5056,33.14749) | 2025-03-29 11:51 | 347.79 | 11.81 | Orta | Gündüz |
+| [38.42413, 27.21761](https://www.google.com/maps?q=38.42413,27.21761) | 2025-03-30 00:11 | 297.76 | 0.85 | Orta | Gece |
+| [38.50632, 33.16951](https://www.google.com/maps?q=38.50632,33.16951) | 2025-03-30 00:11 | 300.61 | 0.97 | Orta | Gece |
+| [38.74769, 26.95028](https://www.google.com/maps?q=38.74769,26.95028) | 2025-03-30 00:11 | 304.51 | 0.93 | Orta | Gece |
+| [39.86357, 26.24482](https://www.google.com/maps?q=39.86357,26.24482) | 2025-03-30 00:11 | 311.69 | 1.47 | Orta | Gece |
+| [39.86684, 26.24572](https://www.google.com/maps?q=39.86684,26.24572) | 2025-03-30 00:11 | 300.85 | 0.77 | Orta | Gece |
+| [40.75723, 29.76287](https://www.google.com/maps?q=40.75723,29.76287) | 2025-03-30 00:11 | 299.45 | 1.55 | Orta | Gece |
+| [40.7812, 29.59949](https://www.google.com/maps?q=40.7812,29.59949) | 2025-03-30 00:11 | 298.4 | 1.16 | Orta | Gece |
+| [41.01836, 28.5535](https://www.google.com/maps?q=41.01836,28.5535) | 2025-03-30 00:11 | 300.02 | 1.19 | Orta | Gece |
+| [41.63116, 27.68612](https://www.google.com/maps?q=41.63116,27.68612) | 2025-03-30 00:11 | 300.02 | 0.89 | Orta | Gece |
+| [41.6338, 27.50712](https://www.google.com/maps?q=41.6338,27.50712) | 2025-03-30 00:11 | 298.47 | 0.66 | Orta | Gece |
 | [38.42413, 27.21761](https://www.google.com/maps?q=38.42413,27.21761) | 2025-03-30 00:11 | 297.76 | 0.85 | Orta | Gece |
 | [38.50632, 33.16951](https://www.google.com/maps?q=38.50632,33.16951) | 2025-03-30 00:11 | 300.61 | 0.97 | Orta | Gece |
 | [38.74769, 26.95028](https://www.google.com/maps?q=38.74769,26.95028) | 2025-03-30 00:11 | 304.51 | 0.93 | Orta | Gece |
