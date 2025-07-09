@@ -3,19 +3,10 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2025-07-09 00:51:13 (UTC)
+### Son Güncelleme: 2025-07-09 04:24:58 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
-| [38.7509, 26.93751](https://www.google.com/maps?q=38.7509,26.93751) | 2025-07-08 01:05 | 316.14 | 1.13 | Orta | Gece |
-| [38.7542, 26.93824](https://www.google.com/maps?q=38.7542,26.93824) | 2025-07-08 01:05 | 316.14 | 1.43 | Orta | Gece |
-| [39.48404, 30.0403](https://www.google.com/maps?q=39.48404,30.0403) | 2025-07-08 01:05 | 304.45 | 1.35 | Orta | Gece |
-| [39.48683, 30.03853](https://www.google.com/maps?q=39.48683,30.03853) | 2025-07-08 01:05 | 299.84 | 1.19 | Orta | Gece |
-| [39.8636, 26.24464](https://www.google.com/maps?q=39.8636,26.24464) | 2025-07-08 01:05 | 307.25 | 1.18 | Orta | Gece |
-| [39.86613, 26.24406](https://www.google.com/maps?q=39.86613,26.24406) | 2025-07-08 01:05 | 315.12 | 1.35 | Orta | Gece |
-| [40.75568, 29.76226](https://www.google.com/maps?q=40.75568,29.76226) | 2025-07-08 01:05 | 303.31 | 1.57 | Orta | Gece |
-| [41.01936, 28.55361](https://www.google.com/maps?q=41.01936,28.55361) | 2025-07-08 01:05 | 310.69 | 1.35 | Orta | Gece |
-| [41.02064, 28.55424](https://www.google.com/maps?q=41.02064,28.55424) | 2025-07-08 01:05 | 311.14 | 1.09 | Orta | Gece |
 | [36.71723, 36.2019](https://www.google.com/maps?q=36.71723,36.2019) | 2025-07-08 10:43 | 340.7 | 3.75 | Düşük | Gündüz |
 | [36.72797, 36.21039](https://www.google.com/maps?q=36.72797,36.21039) | 2025-07-08 10:43 | 340.31 | 9.01 | Düşük | Gündüz |
 | [36.73479, 36.209](https://www.google.com/maps?q=36.73479,36.209) | 2025-07-08 10:43 | 336.16 | 4.49 | Düşük | Gündüz |
@@ -37,15 +28,6 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [39.95544, 44.29466](https://www.google.com/maps?q=39.95544,44.29466) | 2025-07-08 10:45 | 367.0 | 8.9 | Yüksek | Gündüz |
 | [41.2421, 36.46172](https://www.google.com/maps?q=41.2421,36.46172) | 2025-07-08 10:45 | 336.92 | 6.61 | Düşük | Gündüz |
 | [41.26506, 31.42578](https://www.google.com/maps?q=41.26506,31.42578) | 2025-07-08 10:45 | 347.75 | 7.27 | Orta | Gündüz |
-| [38.7509, 26.93751](https://www.google.com/maps?q=38.7509,26.93751) | 2025-07-08 01:05 | 316.14 | 1.13 | Orta | Gece |
-| [38.7542, 26.93824](https://www.google.com/maps?q=38.7542,26.93824) | 2025-07-08 01:05 | 316.14 | 1.43 | Orta | Gece |
-| [39.48404, 30.0403](https://www.google.com/maps?q=39.48404,30.0403) | 2025-07-08 01:05 | 304.45 | 1.35 | Orta | Gece |
-| [39.48683, 30.03853](https://www.google.com/maps?q=39.48683,30.03853) | 2025-07-08 01:05 | 299.84 | 1.19 | Orta | Gece |
-| [39.8636, 26.24464](https://www.google.com/maps?q=39.8636,26.24464) | 2025-07-08 01:05 | 307.25 | 1.18 | Orta | Gece |
-| [39.86613, 26.24406](https://www.google.com/maps?q=39.86613,26.24406) | 2025-07-08 01:05 | 315.12 | 1.35 | Orta | Gece |
-| [40.75568, 29.76226](https://www.google.com/maps?q=40.75568,29.76226) | 2025-07-08 01:05 | 303.31 | 1.57 | Orta | Gece |
-| [41.01936, 28.55361](https://www.google.com/maps?q=41.01936,28.55361) | 2025-07-08 01:05 | 310.69 | 1.35 | Orta | Gece |
-| [41.02064, 28.55424](https://www.google.com/maps?q=41.02064,28.55424) | 2025-07-08 01:05 | 311.14 | 1.09 | Orta | Gece |
 | [36.71723, 36.2019](https://www.google.com/maps?q=36.71723,36.2019) | 2025-07-08 10:43 | 340.7 | 3.75 | Düşük | Gündüz |
 | [36.72797, 36.21039](https://www.google.com/maps?q=36.72797,36.21039) | 2025-07-08 10:43 | 340.31 | 9.01 | Düşük | Gündüz |
 | [36.73479, 36.209](https://www.google.com/maps?q=36.73479,36.209) | 2025-07-08 10:43 | 336.16 | 4.49 | Düşük | Gündüz |
