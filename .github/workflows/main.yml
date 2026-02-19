@@ -35,6 +35,7 @@ jobs:
           MAP_KEY_4: ${{ secrets.MAP_KEY_4 }}
           MAP_KEY_5: ${{ secrets.MAP_KEY_5 }}
           MAP_KEY_6: ${{ secrets.MAP_KEY_6 }}
+          MAP_KEY_7: ${{ secrets.MAP_KEY_7 }}
           
       # Run the update_readme.py script to update README.md with the latest fire data
       - name: Update README with Fire Data
