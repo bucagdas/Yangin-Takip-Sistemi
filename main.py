@@ -31,7 +31,8 @@ map_keys = [k for k in [
     os.environ.get('MAP_KEY_3'),
     os.environ.get('MAP_KEY_4'),
     os.environ.get('MAP_KEY_5'),
-    os.environ.get('MAP_KEY_6')
+    os.environ.get('MAP_KEY_6'),
+    os.environ.get('MAP_KEY_7')
 ] if k is not None]
 
 if not map_keys:
@@ -40,7 +41,7 @@ if not map_keys:
 
 selected_map_key = random.choice(map_keys)
 
-country_code = 'TUR'
+TUR_BBOX = '25.6,35.8,44.8,42.1'  # west,south,east,north
 days = 1
 satellite_sources = ['VIIRS_NOAA20_NRT', 'VIIRS_NOAA21_NRT', 'VIIRS_SNPP_NRT']
 
@@ -55,7 +56,7 @@ os.makedirs(sqlite_dir, exist_ok=True)
 all_dfs = []
 
 for satellite in satellite_sources:
-    url = f'https://firms.modaps.eosdis.nasa.gov/api/country/csv/{selected_map_key}/{satellite}/{country_code}/{days}'
+    url = f'https://firms.modaps.eosdis.nasa.gov/api/area/csv/{selected_map_key}/{satellite}/{TUR_BBOX}/{days}'
 
     try:
         response = requests.get(url)
@@ -113,9 +114,6 @@ def save_satellite_and_country_info(selected_map_key):
         satellite_response.raise_for_status()
         save_to_text_file('./available_satellites.txt', satellite_response.text)
 
-        country_response = requests.get('https://firms.modaps.eosdis.nasa.gov/api/countries')
-        country_response.raise_for_status()
-        save_to_text_file('./country_codes.txt', country_response.text)
 
     except RequestException as e:
         logging.error(f"API isteği sırasında hata oluştu: {e}")
