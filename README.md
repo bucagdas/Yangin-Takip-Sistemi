@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2026-02-28 04:45:52 (UTC)
+### Son Güncelleme: 2026-02-28 08:15:14 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -25,6 +25,11 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [38.65741, 28.42037](https://www.google.com/maps?q=38.65741,28.42037) | 2026-02-27 11:02 | 342.7 | 18.46 | Orta | Gündüz |
 | [38.73849, 26.94662](https://www.google.com/maps?q=38.73849,26.94662) | 2026-02-27 11:02 | 337.25 | 5.79 | Orta | Gündüz |
 | [40.80025, 26.55037](https://www.google.com/maps?q=40.80025,26.55037) | 2026-02-27 11:04 | 329.08 | 5.03 | Orta | Gündüz |
+| [38.73625, 26.94538](https://www.google.com/maps?q=38.73625,26.94538) | 2026-02-28 01:02 | 305.0 | 1.0 | Orta | Gece |
+| [38.74157, 26.94779](https://www.google.com/maps?q=38.74157,26.94779) | 2026-02-28 01:02 | 306.61 | 1.0 | Orta | Gece |
+| [38.75179, 26.93234](https://www.google.com/maps?q=38.75179,26.93234) | 2026-02-28 01:02 | 301.66 | 1.22 | Orta | Gece |
+| [39.86431, 26.24337](https://www.google.com/maps?q=39.86431,26.24337) | 2026-02-28 01:02 | 307.43 | 1.0 | Orta | Gece |
+| [39.86496, 26.24391](https://www.google.com/maps?q=39.86496,26.24391) | 2026-02-28 01:02 | 304.72 | 1.17 | Orta | Gece |
 | [35.87822, 37.94909](https://www.google.com/maps?q=35.87822,37.94909) | 2026-02-27 10:32 | 327.21 | 2.29 | Orta | Gündüz |
 | [35.87914, 38.18543](https://www.google.com/maps?q=35.87914,38.18543) | 2026-02-27 10:32 | 330.06 | 3.04 | Orta | Gündüz |
 | [35.9684, 43.76612](https://www.google.com/maps?q=35.9684,43.76612) | 2026-02-27 10:32 | 326.53 | 4.11 | Orta | Gündüz |
