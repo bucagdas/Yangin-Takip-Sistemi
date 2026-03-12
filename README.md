@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2026-03-12 00:57:35 (UTC)
+### Son Güncelleme: 2026-03-12 05:10:18 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -91,6 +91,24 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [41.26438, 31.42646](https://www.google.com/maps?q=41.26438,31.42646) | 2026-03-11 10:38 | 338.12 | 5.28 | Orta | Gündüz |
 | [41.54873, 34.71178](https://www.google.com/maps?q=41.54873,34.71178) | 2026-03-11 10:38 | 333.99 | 6.29 | Orta | Gündüz |
 | [40.15001, 28.29139](https://www.google.com/maps?q=40.15001,28.29139) | 2026-03-11 12:17 | 347.0 | 10.68 | Orta | Gündüz |
+| [39.94687, 33.19565](https://www.google.com/maps?q=39.94687,33.19565) | 2026-03-12 00:35 | 295.42 | 0.26 | Orta | Gece |
+| [41.17545, 32.63463](https://www.google.com/maps?q=41.17545,32.63463) | 2026-03-12 00:35 | 302.64 | 0.91 | Orta | Gece |
+| [41.17906, 32.63889](https://www.google.com/maps?q=41.17906,32.63889) | 2026-03-12 00:35 | 305.02 | 0.9 | Orta | Gece |
+| [41.17999, 32.6354](https://www.google.com/maps?q=41.17999,32.6354) | 2026-03-12 00:35 | 296.84 | 0.76 | Orta | Gece |
+| [41.18027, 32.63685](https://www.google.com/maps?q=41.18027,32.63685) | 2026-03-12 00:35 | 307.1 | 0.91 | Orta | Gece |
+| [41.18481, 32.63761](https://www.google.com/maps?q=41.18481,32.63761) | 2026-03-12 00:35 | 296.12 | 0.76 | Orta | Gece |
+| [36.7318, 36.21415](https://www.google.com/maps?q=36.7318,36.21415) | 2026-03-12 00:37 | 299.45 | 1.05 | Orta | Gece |
+| [36.87002, 34.7638](https://www.google.com/maps?q=36.87002,34.7638) | 2026-03-12 00:37 | 297.36 | 1.14 | Orta | Gece |
+| [36.87234, 34.76493](https://www.google.com/maps?q=36.87234,34.76493) | 2026-03-12 00:37 | 295.23 | 1.17 | Orta | Gece |
+| [38.73584, 26.96897](https://www.google.com/maps?q=38.73584,26.96897) | 2026-03-12 00:37 | 310.25 | 1.23 | Orta | Gece |
+| [38.73936, 26.9328](https://www.google.com/maps?q=38.73936,26.9328) | 2026-03-12 00:37 | 305.04 | 1.01 | Orta | Gece |
+| [38.74049, 26.94723](https://www.google.com/maps?q=38.74049,26.94723) | 2026-03-12 00:37 | 296.61 | 1.56 | Orta | Gece |
+| [38.74346, 26.95305](https://www.google.com/maps?q=38.74346,26.95305) | 2026-03-12 00:37 | 329.79 | 1.7 | Orta | Gece |
+| [38.74831, 26.95004](https://www.google.com/maps?q=38.74831,26.95004) | 2026-03-12 00:37 | 298.49 | 1.7 | Orta | Gece |
+| [38.75501, 26.93834](https://www.google.com/maps?q=38.75501,26.93834) | 2026-03-12 00:37 | 303.77 | 0.9 | Orta | Gece |
+| [39.48451, 30.04467](https://www.google.com/maps?q=39.48451,30.04467) | 2026-03-12 00:37 | 296.07 | 0.91 | Orta | Gece |
+| [39.61009, 27.88188](https://www.google.com/maps?q=39.61009,27.88188) | 2026-03-12 00:37 | 295.1 | 0.73 | Orta | Gece |
+| [39.86908, 26.24722](https://www.google.com/maps?q=39.86908,26.24722) | 2026-03-12 00:37 | 302.17 | 1.08 | Orta | Gece |
 | [35.8445, 38.07547](https://www.google.com/maps?q=35.8445,38.07547) | 2026-03-11 10:06 | 331.27 | 5.24 | Orta | Gündüz |
 | [35.84507, 38.07323](https://www.google.com/maps?q=35.84507,38.07323) | 2026-03-11 10:06 | 332.08 | 5.58 | Orta | Gündüz |
 | [35.97833, 42.89347](https://www.google.com/maps?q=35.97833,42.89347) | 2026-03-11 10:06 | 341.78 | 10.32 | Orta | Gündüz |
