@@ -3,13 +3,10 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2026-03-18 20:23:54 (UTC)
+### Son Güncelleme: 2026-03-19 01:08:37 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
-| [37.3499, 37.16158](https://www.google.com/maps?q=37.3499,37.16158) | 2026-03-18 00:24 | 295.84 | 1.11 | Orta | Gece |
-| [41.25537, 31.41211](https://www.google.com/maps?q=41.25537,31.41211) | 2026-03-18 00:24 | 317.91 | 1.85 | Orta | Gece |
-| [38.42765, 27.21657](https://www.google.com/maps?q=38.42765,27.21657) | 2026-03-18 00:26 | 299.22 | 0.69 | Orta | Gece |
 | [35.96981, 43.76484](https://www.google.com/maps?q=35.96981,43.76484) | 2026-03-18 10:04 | 340.59 | 9.23 | Orta | Gündüz |
 | [35.98128, 43.77095](https://www.google.com/maps?q=35.98128,43.77095) | 2026-03-18 10:04 | 342.12 | 6.07 | Orta | Gündüz |
 | [36.01891, 43.68375](https://www.google.com/maps?q=36.01891,43.68375) | 2026-03-18 10:04 | 329.92 | 1.82 | Orta | Gündüz |
