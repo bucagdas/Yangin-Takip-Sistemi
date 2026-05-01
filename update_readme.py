@@ -103,7 +103,7 @@ def update_readme_with_fire_data():
                 f.write("\n## Son Yangın Verileri\n")
                 f.write(table_md)
                 f.write("\n## Yazar\n")
-                f.write("\n[sarusadgac](https://x.com/sarusadgac)\n")
+                f.write("\n[bucagdas](https://x.com/bucagdas)\n")
 
             logging.info("README.md güncellendi.")
         except Exception as e:

@@ -88,4 +88,4 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 
 ## Yazar
 
-[sarusadgac](https://x.com/sarusadgac)
+[bucagdas](https://x.com/bucagdas)
