@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2026-05-10 06:26:59 (UTC)
+### Son Güncelleme: 2026-05-10 09:19:29 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -138,11 +138,6 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [41.19193, 32.62297](https://www.google.com/maps?q=41.19193,32.62297) | 2026-05-10 00:01 | 296.73 | 0.62 | Orta | Gece |
 | [41.21869, 27.74466](https://www.google.com/maps?q=41.21869,27.74466) | 2026-05-10 00:01 | 302.28 | 0.62 | Orta | Gece |
 | [41.63594, 27.5066](https://www.google.com/maps?q=41.63594,27.5066) | 2026-05-10 00:01 | 299.6 | 0.86 | Orta | Gece |
-| [35.97895, 43.77279](https://www.google.com/maps?q=35.97895,43.77279) | 2026-05-09 09:09 | 353.46 | 7.81 | Orta | Gündüz |
-| [35.99642, 43.76487](https://www.google.com/maps?q=35.99642,43.76487) | 2026-05-09 09:09 | 332.54 | 3.49 | Orta | Gündüz |
-| [36.01998, 43.68536](https://www.google.com/maps?q=36.01998,43.68536) | 2026-05-09 09:09 | 336.7 | 6.22 | Orta | Gündüz |
-| [36.02012, 43.68447](https://www.google.com/maps?q=36.02012,43.68447) | 2026-05-09 09:09 | 338.31 | 2.36 | Orta | Gündüz |
-| [36.96064, 42.05257](https://www.google.com/maps?q=36.96064,42.05257) | 2026-05-09 09:09 | 327.22 | 4.35 | Orta | Gündüz |
 | [36.01909, 43.68427](https://www.google.com/maps?q=36.01909,43.68427) | 2026-05-09 10:49 | 339.8 | 4.25 | Orta | Gündüz |
 | [36.16693, 32.93555](https://www.google.com/maps?q=36.16693,32.93555) | 2026-05-09 10:51 | 339.41 | 3.48 | Orta | Gündüz |
 | [36.73053, 36.21257](https://www.google.com/maps?q=36.73053,36.21257) | 2026-05-09 10:51 | 337.61 | 6.52 | Düşük | Gündüz |
