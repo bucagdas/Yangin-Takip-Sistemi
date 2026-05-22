@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2026-05-22 14:10:26 (UTC)
+### Son Güncelleme: 2026-05-22 17:42:58 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -62,6 +62,11 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [37.01203, 42.63768](https://www.google.com/maps?q=37.01203,42.63768) | 2026-05-22 09:49 | 340.52 | 3.58 | Orta | Gündüz |
 | [38.35658, 38.37449](https://www.google.com/maps?q=38.35658,38.37449) | 2026-05-22 09:49 | 340.39 | 2.29 | Orta | Gündüz |
 | [39.93969, 41.12737](https://www.google.com/maps?q=39.93969,41.12737) | 2026-05-22 09:49 | 333.63 | 4.64 | Orta | Gündüz |
+| [36.879, 31.15838](https://www.google.com/maps?q=36.879,31.15838) | 2026-05-22 11:30 | 340.99 | 4.8 | Orta | Gündüz |
+| [38.73921, 26.9455](https://www.google.com/maps?q=38.73921,26.9455) | 2026-05-22 11:30 | 336.69 | 4.89 | Orta | Gündüz |
+| [41.25273, 31.41121](https://www.google.com/maps?q=41.25273,31.41121) | 2026-05-22 11:32 | 326.72 | 3.6 | Orta | Gündüz |
+| [41.2532, 31.41719](https://www.google.com/maps?q=41.2532,31.41719) | 2026-05-22 11:32 | 325.62 | 4.69 | Orta | Gündüz |
+| [41.26313, 31.42779](https://www.google.com/maps?q=41.26313,31.42779) | 2026-05-22 11:32 | 327.03 | 8.14 | Düşük | Gündüz |
 | [38.42412, 27.21439](https://www.google.com/maps?q=38.42412,27.21439) | 2026-05-22 01:15 | 295.99 | 1.41 | Orta | Gece |
 | [38.73449, 26.9422](https://www.google.com/maps?q=38.73449,26.9422) | 2026-05-22 01:15 | 306.64 | 3.71 | Orta | Gece |
 | [38.73978, 26.94456](https://www.google.com/maps?q=38.73978,26.94456) | 2026-05-22 01:15 | 304.36 | 4.54 | Orta | Gece |
