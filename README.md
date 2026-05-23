@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2026-05-23 06:26:53 (UTC)
+### Son Güncelleme: 2026-05-23 09:30:12 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -16,10 +16,6 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [41.25273, 31.41121](https://www.google.com/maps?q=41.25273,31.41121) | 2026-05-22 11:32 | 326.72 | 3.6 | Orta | Gündüz |
 | [41.2532, 31.41719](https://www.google.com/maps?q=41.2532,31.41719) | 2026-05-22 11:32 | 325.62 | 4.69 | Orta | Gündüz |
 | [41.26313, 31.42779](https://www.google.com/maps?q=41.26313,31.42779) | 2026-05-22 11:32 | 327.03 | 8.14 | Düşük | Gündüz |
-| [35.98379, 43.76659](https://www.google.com/maps?q=35.98379,43.76659) | 2026-05-22 09:15 | 332.91 | 6.93 | Orta | Gündüz |
-| [36.93605, 42.11808](https://www.google.com/maps?q=36.93605,42.11808) | 2026-05-22 09:15 | 346.51 | 9.49 | Orta | Gündüz |
-| [36.93761, 42.12352](https://www.google.com/maps?q=36.93761,42.12352) | 2026-05-22 09:15 | 339.04 | 9.49 | Orta | Gündüz |
-| [36.94046, 42.12028](https://www.google.com/maps?q=36.94046,42.12028) | 2026-05-22 09:15 | 367.0 | 15.13 | Yüksek | Gündüz |
 | [36.93568, 42.12305](https://www.google.com/maps?q=36.93568,42.12305) | 2026-05-22 10:56 | 367.0 | 12.35 | Yüksek | Gündüz |
 | [36.93614, 42.13128](https://www.google.com/maps?q=36.93614,42.13128) | 2026-05-22 10:56 | 340.88 | 4.96 | Orta | Gündüz |
 | [36.93733, 42.12172](https://www.google.com/maps?q=36.93733,42.12172) | 2026-05-22 10:56 | 367.0 | 14.33 | Yüksek | Gündüz |
