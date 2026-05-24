@@ -1,1 +1,1 @@
-[]
+[{"latitude":37.25454,"longitude":30.44215,"bright_ti4":301.97,"scan":0.38,"track":0.59,"acq_date":"2026-05-24","acq_time":37,"satellite":"N21","instrument":"VIIRS","confidence":"n","version":"2.0NRT","bright_ti5":279.44,"frp":2.49,"daynight":"N"},{"latitude":41.79503,"longitude":26.70315,"bright_ti4":297.04,"scan":0.39,"track":0.44,"acq_date":"2026-05-24","acq_time":37,"satellite":"N21","instrument":"VIIRS","confidence":"n","version":"2.0NRT","bright_ti5":281.19,"frp":0.55,"daynight":"N"}]
