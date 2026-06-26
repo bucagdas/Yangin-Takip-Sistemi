@@ -1,14 +1,3 @@
-2026-06-08 02:34:12,147:ERROR:API isteği sırasında hata oluştu: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/d78a0906d3740632290d069b3c06c4c7/VIIRS_NOAA21_NRT/25.6,35.8,44.8,42.1/1 (Caused by NewConnectionError("HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-2026-06-08 02:36:27,315:ERROR:API isteği sırasında hata oluştu: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/d78a0906d3740632290d069b3c06c4c7/VIIRS_SNPP_NRT/25.6,35.8,44.8,42.1/1 (Caused by NewConnectionError("HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-2026-06-08 02:38:42,483:ERROR:API isteği sırasında hata oluştu: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/data_availability/csv/d78a0906d3740632290d069b3c06c4c7/ALL (Caused by NewConnectionError("HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-2026-06-08 08:42:10,687:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-06-08 08:42:10,875:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA20_NRT.csv'
-2026-06-08 08:42:10,876:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA20_NRT.json'
-2026-06-08 08:42:10,996:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-06-08 08:42:11,165:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA21_NRT.csv'
-2026-06-08 08:42:11,165:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA21_NRT.json'
-2026-06-08 08:42:11,277:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-06-08 08:42:11,443:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_SNPP_NRT.csv'
 2026-06-08 08:42:11,443:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
 2026-06-08 08:42:11,453:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
 2026-06-08 08:42:11,644:INFO:'./available_satellites.txt' kaydedildi.
@@ -1009,3 +998,14 @@
 2026-06-26 17:27:50,171:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
 2026-06-26 17:27:50,178:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
 2026-06-26 17:27:50,511:INFO:'./available_satellites.txt' kaydedildi.
+2026-06-26 21:11:12,514:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-06-26 21:11:12,740:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA20_NRT.csv'
+2026-06-26 21:11:12,741:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA20_NRT.json'
+2026-06-26 21:11:12,959:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-06-26 21:11:13,162:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA21_NRT.csv'
+2026-06-26 21:11:13,163:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA21_NRT.json'
+2026-06-26 21:11:13,415:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-06-26 21:11:13,612:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_SNPP_NRT.csv'
+2026-06-26 21:11:13,612:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
+2026-06-26 21:11:13,621:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
+2026-06-26 21:11:14,081:INFO:'./available_satellites.txt' zaten güncel.
