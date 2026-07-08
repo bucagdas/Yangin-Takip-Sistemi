@@ -1,14 +1,3 @@
-2026-06-20 13:22:29,853:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-06-20 13:22:30,050:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA20_NRT.csv'
-2026-06-20 13:22:30,050:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA20_NRT.json'
-2026-06-20 13:22:30,239:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-06-20 13:22:30,421:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA21_NRT.csv'
-2026-06-20 13:22:30,421:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA21_NRT.json'
-2026-06-20 13:22:30,672:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-06-20 13:22:30,845:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_SNPP_NRT.csv'
-2026-06-20 13:22:30,846:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
-2026-06-20 13:22:30,853:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
-2026-06-20 13:22:31,128:INFO:'./available_satellites.txt' zaten güncel.
 2026-06-20 17:13:19,362:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
 2026-06-20 17:13:19,556:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA20_NRT.csv'
 2026-06-20 17:13:19,557:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA20_NRT.json'
@@ -1009,3 +998,7 @@
 2026-07-08 17:16:01,646:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
 2026-07-08 17:16:01,654:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
 2026-07-08 17:16:02,109:INFO:'./available_satellites.txt' kaydedildi.
+2026-07-08 20:55:51,913:ERROR:API isteği sırasında hata oluştu: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/c143a369cf4225c82e32d0a7396c05f1/VIIRS_NOAA20_NRT/25.6,35.8,44.8,42.1/1 (Caused by NewConnectionError("HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-07-08 20:58:07,081:ERROR:API isteği sırasında hata oluştu: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/c143a369cf4225c82e32d0a7396c05f1/VIIRS_NOAA21_NRT/25.6,35.8,44.8,42.1/1 (Caused by NewConnectionError("HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-07-08 21:00:22,249:ERROR:API isteği sırasında hata oluştu: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/c143a369cf4225c82e32d0a7396c05f1/VIIRS_SNPP_NRT/25.6,35.8,44.8,42.1/1 (Caused by NewConnectionError("HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-07-08 21:02:37,417:ERROR:API isteği sırasında hata oluştu: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/data_availability/csv/c143a369cf4225c82e32d0a7396c05f1/ALL (Caused by NewConnectionError("HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
