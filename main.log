@@ -1,14 +1,3 @@
-2026-08-02 01:27:19,796:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_SNPP_NRT.csv'
-2026-08-02 01:27:19,797:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
-2026-08-02 01:27:19,809:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
-2026-08-02 01:27:20,216:INFO:'./available_satellites.txt' kaydedildi.
-2026-08-02 06:24:23,868:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-08-02 06:24:24,114:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA20_NRT.csv'
-2026-08-02 06:24:24,115:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA20_NRT.json'
-2026-08-02 06:24:24,225:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-08-02 06:24:24,453:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA21_NRT.csv'
-2026-08-02 06:24:24,454:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA21_NRT.json'
-2026-08-02 06:24:24,588:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
 2026-08-02 06:24:24,806:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_SNPP_NRT.csv'
 2026-08-02 06:24:24,806:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
 2026-08-02 06:24:24,813:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
@@ -1009,3 +998,14 @@
 2026-08-19 12:19:38,368:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
 2026-08-19 12:19:38,379:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
 2026-08-19 12:19:38,688:INFO:'./available_satellites.txt' zaten güncel.
+2026-08-19 16:16:53,139:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-08-19 16:16:53,416:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA20_NRT.csv'
+2026-08-19 16:16:53,417:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA20_NRT.json'
+2026-08-19 16:16:53,875:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-08-19 16:16:54,135:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA21_NRT.csv'
+2026-08-19 16:16:54,136:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA21_NRT.json'
+2026-08-19 16:16:54,554:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-08-19 16:16:54,804:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_SNPP_NRT.csv'
+2026-08-19 16:16:54,805:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
+2026-08-19 16:16:54,817:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
+2026-08-19 16:16:55,517:INFO:'./available_satellites.txt' zaten güncel.
