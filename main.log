@@ -1,14 +1,3 @@
-2026-08-06 13:29:22,377:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
-2026-08-06 13:29:22,774:INFO:'./available_satellites.txt' zaten güncel.
-2026-08-07 00:49:32,030:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-08-07 00:49:32,275:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA20_NRT.csv'
-2026-08-07 00:49:32,276:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA20_NRT.json'
-2026-08-07 00:49:32,580:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-08-07 00:49:32,801:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA21_NRT.csv'
-2026-08-07 00:49:32,801:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA21_NRT.json'
-2026-08-07 00:49:33,106:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
-2026-08-07 00:49:33,324:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_SNPP_NRT.csv'
-2026-08-07 00:49:33,325:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
 2026-08-07 00:49:33,347:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
 2026-08-07 00:49:33,778:INFO:'./available_satellites.txt' kaydedildi.
 2026-08-07 05:28:29,466:ERROR:API isteği sırasında hata oluştu: HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/d3471212f78bca8120b070459b9ab3c5/VIIRS_NOAA20_NRT/25.6,35.8,44.8,42.1/1 (Caused by NewConnectionError("HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
@@ -1009,3 +998,14 @@
 2026-08-24 16:21:28,816:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
 2026-08-24 16:21:28,825:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
 2026-08-24 16:21:29,379:INFO:'./available_satellites.txt' kaydedildi.
+2026-08-24 20:15:56,376:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-08-24 20:15:56,646:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA20_NRT.csv'
+2026-08-24 20:15:56,647:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA20_NRT.json'
+2026-08-24 20:15:57,402:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-08-24 20:15:57,660:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_NOAA21_NRT.csv'
+2026-08-24 20:15:57,660:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_NOAA21_NRT.json'
+2026-08-24 20:15:58,616:INFO:API yanıtı: 200, latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,instrument,confidence,version,b
+2026-08-24 20:15:58,864:INFO:CSV güncellendi: 'csv_data/TUR_VIIRS_SNPP_NRT.csv'
+2026-08-24 20:15:58,865:INFO:JSON güncellendi: 'json_data/TUR_VIIRS_SNPP_NRT.json'
+2026-08-24 20:15:58,876:INFO:SQLite güncellendi: 'sqlite_data/TUR_fire_data.db'
+2026-08-24 20:16:00,146:INFO:'./available_satellites.txt' zaten güncel.
