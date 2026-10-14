@@ -3,7 +3,7 @@
 Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.
 
 ## Son Yangın Verileri
-### Son Güncelleme: 2026-10-14 16:04:31 (UTC)
+### Son Güncelleme: 2026-10-14 22:46:12 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
@@ -25,6 +25,10 @@ Bu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for R
 | [36.65526, 43.67911](https://www.google.com/maps?q=36.65526,43.67911) | 2026-10-14 09:34 | 331.68 | 3.81 | Orta | Gündüz |
 | [36.65623, 43.68293](https://www.google.com/maps?q=36.65623,43.68293) | 2026-10-14 09:34 | 348.43 | 3.81 | Orta | Gündüz |
 | [36.73368, 43.85938](https://www.google.com/maps?q=36.73368,43.85938) | 2026-10-14 09:34 | 332.77 | 2.44 | Orta | Gündüz |
+| [35.98089, 43.00103](https://www.google.com/maps?q=35.98089,43.00103) | 2026-10-14 11:15 | 334.58 | 4.3 | Orta | Gündüz |
+| [35.98112, 43.00487](https://www.google.com/maps?q=35.98112,43.00487) | 2026-10-14 11:15 | 332.99 | 4.26 | Orta | Gündüz |
+| [36.5535, 43.38382](https://www.google.com/maps?q=36.5535,43.38382) | 2026-10-14 11:15 | 334.28 | 10.28 | Orta | Gündüz |
+| [36.59682, 43.37103](https://www.google.com/maps?q=36.59682,43.37103) | 2026-10-14 11:15 | 328.85 | 6.45 | Orta | Gündüz |
 | [36.31456, 43.9963](https://www.google.com/maps?q=36.31456,43.9963) | 2026-10-14 08:56 | 355.45 | 23.09 | Orta | Gündüz |
 | [36.31501, 43.9945](https://www.google.com/maps?q=36.31501,43.9945) | 2026-10-14 08:56 | 350.12 | 13.37 | Orta | Gündüz |
 | [36.31694, 44.00398](https://www.google.com/maps?q=36.31694,44.00398) | 2026-10-14 08:56 | 331.6 | 16.93 | Orta | Gündüz |
