@@ -1,37 +1,28 @@
-import os
-import pandas as pd
+import glob
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
-MAX_LOG_LINES = 1000
+import pandas as pd
 
-def trim_log(path, max_lines):
-    try:
-        if os.path.exists(path):
-            with open(path, 'r', encoding='utf-8') as f:
-                lines = f.readlines()
-            if len(lines) > max_lines:
-                with open(path, 'w', encoding='utf-8') as f:
-                    f.writelines(lines[-max_lines:])
-    except Exception:
-        pass
+CSV_PATTERN = 'csv_data/*.csv'
+README_FILE = 'README.md'
+WINDOW = timedelta(days=1)
 
-trim_log('update_readme.log', MAX_LOG_LINES)
-logging.basicConfig(filename='update_readme.log', level=logging.INFO,
-                    format='%(asctime)s:%(levelname)s:%(message)s',
-                    filemode='a')
-
-
-def get_latest_csv_files(csv_dir='csv_data/'):
-    try:
-        csv_files = [f for f in os.listdir(csv_dir) if f.endswith('.csv')]
-        if not csv_files:
-            raise FileNotFoundError("Klasörde CSV dosyası bulunamadı.")
-        latest_files = sorted(csv_files, key=lambda x: os.path.getctime(os.path.join(csv_dir, x)), reverse=True)[:3]
-        return [os.path.join(csv_dir, f) for f in latest_files]
-    except Exception as e:
-        logging.error(f"Son CSV dosyaları bulunurken hata oluştu: {e}")
-        return None
+INTRO = (
+    "# Yangın Takip Sistemi\n\n"
+    "Bu repo, **Türkiye'deki aktif ısı noktalarını** NASA FIRMS (Fire Information for Resource "
+    "Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Veriler "
+    "VIIRS sensörlü uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelir ve "
+    "Türkiye sınırına göre süzülür.\n\n"
+    "Her nokta bir uydu pikselinin merkezidir; çoğu bitki örtüsü yangınıdır ama sanayi tesisi "
+    "gibi sabit ısı kaynakları da görünebilir. Aynı yangın birden çok uydu ve noktada yer alabilir.\n"
+)
+FOOTER = "\n## Yazar\n\n[bucagdas](https://x.com/bucagdas)\n"
+TABLE_HEADER = (
+    '| Koordinatlar (Enlem, Boylam) | Tarih ve Saat (UTC) | Parlaklık Sıcaklığı (K) | FRP (MW) '
+    '| Güven Seviyesi | Gündüz/Gece |\n'
+    '|-----------------------------|----------------|----------|-----|----------------|-------------|\n'
+)
 
 
 def format_time(acq_time):
@@ -43,74 +34,62 @@ def format_time(acq_time):
 
 
 def translate_daynight(value):
-    if value == 'D':
-        return 'Gündüz'
-    elif value == 'N':
-        return 'Gece'
-    return 'Bilinmiyor'
+    return {'D': 'Gündüz', 'N': 'Gece'}.get(value, 'Bilinmiyor')
 
 
 def translate_confidence(value):
-    if value == 'l':
-        return 'Düşük'
-    elif value == 'n':
-        return 'Orta'
-    elif value == 'h':
-        return 'Yüksek'
-    return 'Bilinmiyor'
+    return {'l': 'Düşük', 'n': 'Orta', 'h': 'Yüksek'}.get(value, 'Bilinmiyor')
 
 
 def create_google_maps_link(lat, lon):
     return f"[{lat}, {lon}](https://www.google.com/maps?q={lat},{lon})"
 
 
-def update_readme_with_fire_data():
-    csv_files = get_latest_csv_files()
-
-    if csv_files:
-        try:
-            dfs = []
-            for file in csv_files:
-                df = pd.read_csv(file)
-                satellite_name = os.path.basename(file).replace('.csv', '').split('_', 1)[1]
-                df['Satellite'] = satellite_name
-                dfs.append(df)
-
-            merged_df = pd.concat(dfs, ignore_index=True, sort=False).fillna('Yok')
-
-            now = datetime.utcnow()
-            merged_df['acq_datetime'] = pd.to_datetime(merged_df['acq_date'] + ' ' + merged_df['acq_time'].apply(format_time))
-            filtered_df = merged_df[merged_df['acq_datetime'] >= now - timedelta(days=1)]
-
-            if filtered_df.empty:
-                logging.info("Son 24 saatte veri bulunamadı.")
-                return
-
-            table_md = f"### Son Güncelleme: {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC)\n\n"
-            table_md += '| Koordinatlar (Enlem, Boylam) | Tarih ve Saat | Sıcaklık | FRP | Güven Seviyesi | Gündüz/Gece |\n'
-            table_md += '|-----------------------------|----------------|----------|-----|----------------|-------------|\n'
-
-            for _, row in filtered_df.iterrows():
-                coords = create_google_maps_link(row['latitude'], row['longitude'])
-                date_time = f"{row['acq_date']} {format_time(row['acq_time'])}"
-                confidence_tr = translate_confidence(row.get('confidence', 'Yok'))
-                daynight_tr = translate_daynight(row.get('daynight', 'Yok'))
-                table_md += f"| {coords} | {date_time} | {row.get('bright_ti4', 'Yok')} | {row.get('frp', 'Yok')} | {confidence_tr} | {daynight_tr} |\n"
-
-            with open('README.md', 'w', encoding='utf-8') as f:
-                f.write("# Yangın Takip Sistemi\n")
-                f.write("\nBu repo, **Türkiye'deki yangın verilerini** NASA FIRMS (Fire Information for Resource Management System) API'si üzerinden düzenli olarak çekmekte ve kaydetmektedir. Farklı uydulardan (VIIRS_NOAA20_NRT, VIIRS_NOAA21_NRT, VIIRS_SNPP_NRT) gelen veriler, Türkiye'deki son yangınların konumlarını, sıcaklıklarını, parlaklıklarını ve güven seviyelerini içermektedir.\n")
-                f.write("\n## Son Yangın Verileri\n")
-                f.write(table_md)
-                f.write("\n## Yazar\n")
-                f.write("\n[bucagdas](https://x.com/bucagdas)\n")
-
-            logging.info("README.md güncellendi.")
-        except Exception as e:
-            logging.error(f"README.md güncellenirken hata oluştu: {e}")
-    else:
-        logging.error("Son CSV dosyaları bulunamadı.")
+def load_last_24_hours(now, pattern=CSV_PATTERN):
+    """CSV arşivlerinden son 24 saatin tespitlerini en yeniden eskiye döndür."""
+    files = sorted(glob.glob(pattern))
+    if not files:
+        raise FileNotFoundError('Klasörde CSV dosyası bulunamadı.')
+    merged = pd.concat([pd.read_csv(file) for file in files], ignore_index=True)
+    merged = merged.drop_duplicates()
+    merged['acq_datetime'] = pd.to_datetime(
+        merged['acq_date'].astype(str) + ' ' + merged['acq_time'].apply(format_time),
+        format='%Y-%m-%d %H:%M', errors='coerce'
+    )
+    recent = merged[merged['acq_datetime'] >= now - WINDOW]
+    return recent.sort_values('acq_datetime', ascending=False)
 
 
-if __name__ == "__main__":
-    update_readme_with_fire_data()
+def build_table(rows):
+    lines = [TABLE_HEADER]
+    for _, row in rows.fillna('Yok').iterrows():
+        coords = create_google_maps_link(row['latitude'], row['longitude'])
+        date_time = f"{row['acq_date']} {format_time(row['acq_time'])}"
+        lines.append(
+            f"| {coords} | {date_time} | {row.get('bright_ti4', 'Yok')} | {row.get('frp', 'Yok')} "
+            f"| {translate_confidence(row.get('confidence'))} "
+            f"| {translate_daynight(row.get('daynight'))} |\n"
+        )
+    return ''.join(lines)
+
+
+def build_readme(rows, now):
+    body = "Son 24 saatte Türkiye'de aktif ısı noktası tespit edilmedi.\n" if rows.empty else build_table(rows)
+    return (
+        f"{INTRO}\n## Son 24 Saatin Verileri\n"
+        f"### Son Güncelleme: {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC)\n\n"
+        f"{body}{FOOTER}"
+    )
+
+
+def main():
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
+    rows = load_last_24_hours(now)
+    with open(README_FILE, 'w', encoding='utf-8') as f:
+        f.write(build_readme(rows, now))
+    logging.info(f"README.md güncellendi ({len(rows)} nokta).")
+
+
+if __name__ == '__main__':
+    main()
