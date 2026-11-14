@@ -1,3 +1,4 @@
+import io
 import json
 import logging
 import os
@@ -118,6 +119,23 @@ class DataRuleTests(unittest.TestCase):
             main.update_archive(path, data)
 
             self.assertEqual(len(pd.read_csv(path)), 1)
+
+    def test_empty_response_keeps_archive(self):
+        empty = pd.read_csv(io.BytesIO(HEADER))
+        with tempfile.TemporaryDirectory() as folder:
+            path = os.path.join(folder, 'archive.csv')
+            rows((39.0, 33.0, '2026-11-02')).to_csv(path, index=False)
+            main.update_archive(path, empty)
+
+            self.assertEqual(len(pd.read_csv(path)), 1)
+
+    def test_empty_source_keeps_numeric_columns(self):
+        empty = pd.read_csv(io.BytesIO(HEADER))
+        combined = main.concat_non_empty([rows((39.0, 33.0, '2026-11-02')), empty])
+
+        self.assertEqual(len(combined), 1)
+        self.assertTrue(pd.api.types.is_float_dtype(combined['latitude']))
+        self.assertIs(main.concat_non_empty([empty, empty]), empty)
 
     def test_database_is_compacted(self):
         with tempfile.TemporaryDirectory() as folder:

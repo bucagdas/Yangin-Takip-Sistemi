@@ -111,10 +111,20 @@ def fetch_satellite(map_key, satellite):
     return df
 
 
+def concat_non_empty(frames):
+    """Boş tabloları atlayarak birleştir.
+
+    pandas 3, boş tablonun metin tipli sütunlarını da hesaba katar; boş bir API
+    yanıtı koordinat sütunlarını sayıdan metne çevirir. Hepsi boşsa ilki döner.
+    """
+    non_empty = [frame for frame in frames if not frame.empty]
+    return pd.concat(non_empty, ignore_index=True) if non_empty else frames[0]
+
+
 def update_archive(path, new_rows):
     """CSV arşivine yeni satırları ekle ve bbox döneminden kalan sınır dışı satırları at."""
     if os.path.exists(path):
-        combined = pd.concat([pd.read_csv(path), new_rows], ignore_index=True)
+        combined = concat_non_empty([pd.read_csv(path), new_rows])
     else:
         combined = new_rows
     combined = combined.drop_duplicates()
@@ -175,7 +185,7 @@ def main():
 
     if not latest:
         raise SystemExit('Hiçbir uydu kaynağından veri alınamadı.')
-    update_database(f'{SQLITE_DIR}TUR_fire_data.db', pd.concat(latest, ignore_index=True))
+    update_database(f'{SQLITE_DIR}TUR_fire_data.db', concat_non_empty(latest))
 
     try:
         save_data_availability(map_key)
