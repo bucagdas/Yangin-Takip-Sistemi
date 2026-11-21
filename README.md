@@ -5,7 +5,7 @@ Bu repo, **Türkiye'deki aktif ısı noktalarını** NASA FIRMS (Fire Informatio
 Her nokta bir uydu pikselinin merkezidir; çoğu bitki örtüsü yangınıdır ama sanayi tesisi gibi sabit ısı kaynakları da görünebilir. Aynı yangın birden çok uydu ve noktada yer alabilir.
 
 ## Son 24 Saatin Verileri
-### Son Güncelleme: 2026-11-21 15:42:36 (UTC)
+### Son Güncelleme: 2026-11-21 21:15:20 (UTC)
 
 | Koordinatlar (Enlem, Boylam) | Tarih ve Saat (UTC) | Parlaklık Sıcaklığı (K) | FRP (MW) | Güven Seviyesi | Gündüz/Gece |
 |-----------------------------|----------------|----------|-----|----------------|-------------|
